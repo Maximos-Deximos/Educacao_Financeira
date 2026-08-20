@@ -10,10 +10,9 @@ Explicação do problema que o sistema resolve.
 
 ## Tecnologias
 
-- Front-end: React + TypeScript
-- Back-end: Node.js + TypeScript
+- Front-end: HTML + CSS + JS
+- Back-end: A ser definido
 - Banco: PostgreSQL
-- Infra: Docker
 
 ## Como executar
 
