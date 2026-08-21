@@ -28,3 +28,5 @@ exemplo: git branch nome_da_branch
 # trocar de branch
 exemplo: git switch nome_da_branch
 
+# Pegar o codigo mais recente da main
+git pull origin
