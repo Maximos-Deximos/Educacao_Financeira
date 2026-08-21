@@ -1,23 +1,38 @@
+# Arquitetura Geral
+
+## Visão geral
+
+A aplicação será estruturada em três camadas principais:
+
+1. **Front-end**
+2. **Back-end**
+3. **Banco de dados relacional**
+
+### Fluxo da aplicação
+
+```text
 ┌─────────────────────────────┐
-│         FRONT-END           │
+│          FRONT-END          │
 │                             │
-│ HTML + CSS + JavaScript     │
+│    HTML + CSS + JavaScript  │
 └──────────────┬──────────────┘
                │
                │ HTTP/HTTPS
                │ REST / JSON
                ▼
 ┌─────────────────────────────┐
-│         BACK-END            │
+│          BACK-END           │
 │                             │
-│ A ser definido              │
-│ API / regras aplicação      │
+│       A ser definido        │
+│    API / regras aplicação   │
 └──────────────┬──────────────┘
                │
                │ SQL
                ▼
 ┌─────────────────────────────┐
-│      BANCO RELACIONAL       │
+│     BANCO RELACIONAL        │
 │                             │
-│ PostgreSQL / MySQL etc.     │
+│  PostgreSQL / MySQL etc.    │
 └─────────────────────────────┘
+```
+
