@@ -11,7 +11,7 @@
 │         BACK-END            │
 │                             │
 │ A ser definido              │
-│ API / regras de negócio     │
+│ API / regras aplicação      │
 └──────────────┬──────────────┘
                │
                │ SQL
