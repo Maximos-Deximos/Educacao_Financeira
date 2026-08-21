@@ -29,4 +29,6 @@ exemplo: git branch nome_da_branch
 exemplo: git switch nome_da_branch
 
 # Pegar o codigo mais recente da main
-git pull origin
+git pull origin main
+
+depois de rodar esse comando, os arquivos do remote serão baixados para sua maquina.
