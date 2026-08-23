@@ -1,5 +1,6 @@
 ## Arquitetura de arquivos da aplicação
-'''Educação Financeira/
+'''text
+Educação Financeira/
 ├── index.html                  # Página inicial da aplicação
 │
 ├── pages/                      # Páginas HTML da aplicação
