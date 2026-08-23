@@ -1,5 +1,6 @@
 ## Arquitetura de arquivos da aplicação
-'''text
+
+```text
 Educação Financeira/
 ├── index.html                  # Página inicial da aplicação
 │
@@ -45,4 +46,4 @@ Educação Financeira/
 └── assets/                     # Recursos estáticos da aplicação
     ├── images/                 # Imagens
     └── icons/                  # Ícones
-'''
+```
