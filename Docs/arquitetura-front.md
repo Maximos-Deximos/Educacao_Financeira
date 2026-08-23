@@ -1,49 +1,46 @@
-A arquitetura de arquivos do front-end seguem a seguinte hierquia:
-
-'Educação_Financeira
+## Arquitetura de arquivos da aplicação
+Educação Financeira/
+├── index.html                  # Página inicial da aplicação
 │
-├── index.html <- paginia inicial da aplicalção
-│
-├── pages/
+├── pages/                      # Páginas HTML da aplicação
 │   ├── login.html
 │   ├── cadastro.html
 │   └── home.html
 │
-├── css/
-│   ├── reset.css <- remover diferença padrçao entre navegadores
-│   ├── variables.css <- centraliza valores, são reutilizaveis, modifica temas da aplicação toda
-│   ├── global.css <- estilos gerais
-├── components/ <- elementos reutilizaveis
-│   ├── button.css
-│   └── card.css
+├── css/                        # Estilos da aplicação
+│   ├── reset.css               # Remove diferenças de estilos padrão entre navegadores
+│   ├── variables.css           # Centraliza valores reutilizáveis e facilita a criação de temas
+│   ├── global.css              # Estilos gerais utilizados em toda a aplicação
+│   │
+│   ├── components/             # Estilos de componentes reutilizáveis
+│   │   ├── button.css
+│   │   └── card.css
+│   │
+│   └── layout/                 # Estilos responsáveis pela estrutura e organização do layout
+│       ├── header.css
+│       └── footer.css
 │
-├── layout/ auto esplicatorio modificações ao layout.
-│   ├── header.css
-│   └── footer.css
+├── js/                         # Código JavaScript da aplicação
+│   ├── main.js                 # Ponto de entrada principal do JavaScript
+│   │
+│   ├── config/                 # Configurações da aplicação
+│   │   └── config.js
+│   │
+│   ├── components/             # Comportamentos reutilizáveis dos componentes
+│   │   └── menu.js
+│   │
+│   ├── services/               # Comunicação com APIs e serviços externos
+│   │   ├── api.js
+│   │   └── auth.js
+│   │
+│   ├── utils/                  # Funções utilitárias e genéricas
+│   │   ├── format.js
+│   │   └── validation.js
+│   │
+│   └── pages/                  # Lógica específica de cada página
+│       ├── home.js
+│       └── login.js
 │
-│
-├── js/
-│   ├── main.js <- main
-├── config/
-│   └── config.js
-├── components/ <- comportamentos reutilizaveis
-│   |
-│   └── menu.js
-│
-├── services/ <- comunicação com API
-│   ├── api.js
-│   └── auth.js
-├── utils/ <- funções genereticas
-│   ├── format.js
-│   └── validation.js
-├── pages/ <- logica especifica de cada pagina
-│   ├── home.js
-│   └── login.js
-│
-│
-│
-│
-└── assets/ <- localizção de imagens, arquivos ,webm etc
-    ├── images/
-    └── icons/
-'
+└── assets/                     # Recursos estáticos da aplicação
+    ├── images/                 # Imagens
+    └── icons/                  # Ícones
