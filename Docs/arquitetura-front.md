@@ -1,4 +1,6 @@
-Educação_Financeira
+A arquitetura de arquivos do front-end seguem a seguinte hierquia:
+
+'Educação_Financeira
 │
 ├── index.html <- paginia inicial da aplicalção
 │
@@ -44,3 +46,4 @@ Educação_Financeira
 └── assets/ <- localizção de imagens, arquivos ,webm etc
     ├── images/
     └── icons/
+'
