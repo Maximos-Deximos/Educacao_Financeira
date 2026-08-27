@@ -23,7 +23,7 @@ A aplicação será estruturada em três camadas principais:
 ┌─────────────────────────────┐
 │          BACK-END           │
 │                             │
-│       A ser definido        │
+│       Python (fastAPI)      │
 │    API / regras aplicação   │
 └──────────────┬──────────────┘
                │
@@ -32,7 +32,7 @@ A aplicação será estruturada em três camadas principais:
 ┌─────────────────────────────┐
 │     BANCO RELACIONAL        │
 │                             │
-│  PostgreSQL / MySQL etc.    │
+│        PostgreSQL           │
 └─────────────────────────────┘
 ```
 

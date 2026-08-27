@@ -1,5 +1,3 @@
-Quadrante escopo porfavor atualizar:
-
 # InvestiMentes: Educação Financeira
 
 Descrição curta do projeto.
@@ -13,23 +11,24 @@ Explicação do problema que o sistema resolve.
 ## Tecnologias
 
 - Front-end: HTML + CSS + JS
-- Back-end: A ser definido provalvelmente python
+- Back-end: python (fastAPI)
 - Banco: PostgreSQL
 
 ## Como executar
 
-Inciar arquivo index.html em qualquer navegador de sua escolho
+npm run dev
 
 ### Pré-requisitos
 
-Nenhum (caso haja favor modificar)
+npm
 
 ### Instalação
 
 git clone https://github.com/Maximos-Deximos/Educacao_Financeira/tree/main
 
-cd local/projeto
+cd /local-de-clonagem/InvestiMentes
 
+npm install
 
 
 
