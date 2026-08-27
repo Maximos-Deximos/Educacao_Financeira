@@ -1,8 +1,5 @@
 # Arquitetura do Banco de Dados
 
-> Transcrição do diagrama ER apresentado na imagem
-> `estrutura-banco_dados.jpeg`.
-
 ## Visão geral
 
 O banco de dados apresentado é composto por quatro tabelas:
@@ -14,7 +11,7 @@ O banco de dados apresentado é composto por quatro tabelas:
 
 A tabela `usuarios_questões` funciona como uma tabela associativa entre
 usuários e questões, armazenando também os dados referentes à conclusão
-e ao resultado de cada questão.
+de cada questão.
 
 ------------------------------------------------------------------------
 
@@ -90,7 +87,7 @@ A chave primária é composta por:
 
 ## 4. Tabela `porcentagem_alunos`
 
-Armazena percentuais de progresso e acerto dos alunos.
+Armazena percentuais de conclusão de atividades do aluno.
 
   Chave   Tipo    Campo
   ------- ------- -------------------------
@@ -102,8 +99,7 @@ Armazena percentuais de progresso e acerto dos alunos.
 ### Campos
 
 -   **`UniqueID`** --- chave primária do registro.
--   **`aluno_id`** --- identifica o aluno relacionado; no diagrama está
-    marcado como chave estrangeira.
+-   **`aluno_id`** --- identifica o aluno relacionado.
 -   **`porcentagem_conclusao`** --- percentual de questões concluídas.
 -   **`porcentagem_acerto`** --- percentual de questões respondidas
     corretamente.
@@ -141,7 +137,7 @@ usuarios.UniqueID
        └──────> porcentagem_alunos.aluno_id
 ```
 
-O diagrama indica `aluno_id` como chave estrangeira relacionada à tabela
+`aluno_id`, chave estrangeira relacionada à tabela
 `usuarios`.
 
 ------------------------------------------------------------------------
@@ -192,21 +188,3 @@ O diagrama indica `aluno_id` como chave estrangeira relacionada à tabela
             │
        usuarios
 ```
-
-## Observações
-
--   Os nomes e tipos de campos foram transcritos conforme aparecem no
-    diagrama.
--   O diagrama usa `UniqueID` como chave primária em `usuarios`,
-    `questoes` e `porcentagem_alunos`.
--   `usuarios_questões` possui uma chave primária composta por
-    `usuario_id` e `questao_id`.
--   `usuarios_questões` representa a associação entre usuários e
-    questões e registra o resultado da interação do usuário com cada
-    questão.
--   A relação de `porcentagem_alunos.aluno_id` com `usuarios.UniqueID` é
-    indicada visualmente no diagrama; a cardinalidade exata não está
-    explicitada.
--   O diagrama apresenta `questoes` no plural e `usuarios_questões` com
-    acentuação no nome da tabela. Esses nomes foram preservados na
-    transcrição.
