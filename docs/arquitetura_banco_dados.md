@@ -122,7 +122,6 @@ Uma questão pode estar associada a vários usuários por meio de
 ├──────────────────┤
 │ PK id            │
 │ nome             │
-│ email            │
 │ senha_hash       │
 └────────┬─────────┘
          │

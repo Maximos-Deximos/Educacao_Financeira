@@ -1,12 +1,10 @@
 # InvestiMentes: Educação Financeira
 
-Descrição curta do projeto.
-escopo atualizar
+IvestiMentes: Educação Financeira é uma aplicação web voltada para estudantes que visa ensinar conceitos de educação financeiras à aqueles que desejam aprender.
 
 ## Objetivo
 
-escopo atualizar
-Explicação do problema que o sistema resolve.
+Ensinar conceitos de educação financeira através conteúdos organizados em dois módulos, materiais complementares, videoaulas, exercícios, avaliações e acompanhamento do progresso. O objetivo pedagógico consiste em apresentar os conteúdos de forma progressiva.
 
 ## Tecnologias
 
@@ -16,11 +14,15 @@ Explicação do problema que o sistema resolve.
 
 ## Como executar
 
-npm run dev
+Veja desenvolvimento.md
+
+- Essa seção será atualizado no final do projeto
 
 ### Pré-requisitos
 
-npm
+Veja desenvolvimento.md
+
+- Essa seção será atualizado no final do projeto
 
 ### Instalação
 
@@ -28,7 +30,6 @@ git clone https://github.com/Maximos-Deximos/Educacao_Financeira/tree/main
 
 cd /local-de-clonagem/InvestiMentes
 
-npm install
 
 
 

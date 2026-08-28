@@ -220,3 +220,90 @@ A equipe foi dividida em quatro squads. O Escopo define o produto e suas regras.
 ```
 
 TODO: fix: alguns artefatos em arquivos tipo (```text```)
+
+## Fontes de Pesquisas Utilizadas :
+
+A pesquisa foi realizada a partir dos materiais disponibilizados à equipe para estudo e organização dos conteúdos.
+
+1. Banco do Brasil ( https://www.bcb.gov.br/cidadaniafinanceira )
+
+O Banco do Brasil recebeu destaque entre os materiais usados na pesquisa do projeto. Foram considerados materiais educacionais disponibilizados em PDF e conteúdos audiovisuais usados como apoio à elaboração das matérias.
+
+Também foram considerados vídeos disponibilizados no YouTube do Canal do Banco Central do Brasil ( https://www.youtube.com/@BancoCentralBR )
+
+Créditos ao Banco do Brasil pelos materiais disponibilizados para estudo e apoio ao desenvolvimento do projeto, incluindo documentos em PDF, materiais educacionais e vídeos. ( https://www.bcb.gov.br/cidadaniafinanceira/cidadania_biblioteca )
+
+2. Materiais em PDF usados no Módulo Básico
+
+Matéria 1, Escolhas financeiras, necessidades, desejos e projetos
+
+v4_modulo_1_caderno_educacao_financeira_430206_2026.pdf
+folder_serie_II_sonhos_a_educacao_financeira_pode_ajudar.pdf
+
+Matéria 2, Orçamento pessoal, receitas e despesas:
+
+v4_modulo_2_caderno_educacao_financeira_430206_2026.pdf
+Orcamento.pdf
+folder_serie_II_orcamento_pessoal.pdf
+
+Matéria 3, Consumo planejado, comparação de preços e desperdício:
+
+v4_modulo_4_caderno_educacao_financeira_430206_2026.pdf
+consumo_consciente.pdf
+consumo_sustentavel.pdf
+matematica_com_dinheiro.pdf
+
+Matéria 4, Poupança, metas e reserva para imprevistos:
+
+folder_serie_II_habito_poupar.pdf
+poupana.pdf
+v4_modulo_5_caderno_educacao_financeira_430206_2026.pdf
+Ficha-Atividade-EP-3.pdf
+
+3. Materiais em PDF usados no Módulo Intermediário
+
+Matéria 1, Crédito, juros, cartão de crédito e Custo Efetivo Total:
+
+v4_modulo_3_caderno_educacao_financeira_430206_2026.pdf
+folder_serie_II_uso_credito.pdf
+folder_serie_II_cartao_credito_utilize forma_consciente.pdf
+glossario_cidadania_financeira.pdf
+
+Matéria 2, Endividamento, superendividamento e reorganização financeira:
+
+v4_modulo_3_caderno_educacao_financeira_430206_2026.pdf
+folder_serie_II_como_lidar_dividas.pdf
+folder_serie_II_é_possivel_sair_do_superendividamento.pdf
+folder_serie_II_elimine_desperdicio_faca_dinheiro_valer.pdf
+
+Matéria 3, Investimentos, liquidez, risco e rentabilidade:
+
+V4_modulo_5_caderno_educacao_financeira_430206_2026.pdf
+glossario_cidadania_financeira.pdf
+
+Matéria 4, Riscos financeiros, golpes, seguros e planejamento de futuro:
+
+v4_modulo_6_caderno_educacao_financeira_430206_2026.pdf
+Ficha-Atividade-EP-3.pdf
+
+4. Videoaulas
+
+Série "Eu e meu dinheiro"
+
+"Eu vou levar" ( https://www.youtube.com/watch?v=FdTip4SdWMw )
+
+"O Piano ou a Aninha" ( https://www.youtube.com/watch?v=A7XxxYZjQ4k )
+
+"Filhos da Mama" ( https://www.youtube.com/watch?v=ZZdJwfVaJWU )
+
+"Duas vezes Judite" ( https://www.youtube.com/watch?v=k6O554uP2Kc )
+
+
+Créditos aos responsáveis pela série, aos canais responsáveis pela disponibilização dos vídeos e às instituições responsáveis pelos materiais usados como apoio educacional. 
+
+Crédito especial ao Banco do Brasil pelos materiais disponibilizados ao grupo durante a pesquisa, incluindo PDFs, conteúdos educacionais e vídeos utilizados como apoio ao projeto.
+
+Esse projeto será aberto ao publico, logo nomes e outros dados sensíveis de membros não serão expostos agora.
+Agradecimento especial para Quadrante Escopo e especialmente ao seu líder.
+
+TODO: Add nome da conta-github de cada membro do quadrante escopo
