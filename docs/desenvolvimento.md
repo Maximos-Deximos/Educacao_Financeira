@@ -50,6 +50,8 @@ postgreSQL
 # NUNCA PUSHAR CODIGO DIRETAMENTE NA MAIN
 Desenvolvimentos da aplicação DEVEM ser feitos em branches, quando os desenvolvimento passar pelo QA faremos um merger para main.
 
+- Criar uma branch para cada feature/pagina/fix para garantir que o codigo na main continue estável e funcional
+
 ## Commits
 
 Usamos Conventional Commits:
