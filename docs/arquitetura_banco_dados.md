@@ -5,9 +5,8 @@
 O banco de dados apresentado é composto por quatro tabelas:
 
 -   `usuarios`
--   `questoes`
 -   `usuarios_questões`
--   `porcentagem_alunos`
+-   `questoes`
 
 A tabela `usuarios_questões` funciona como uma tabela associativa entre
 usuários e questões, armazenando também os dados referentes à conclusão
@@ -23,13 +22,13 @@ Armazena os dados dos usuários.
   ------- -------- ------------
   PK      ---      `UniqueID`
   ---     `str`    `nome`
-  ---     `text`   `senha`
+  ---     `text`   `senha_hash`
 
 ### Campos
 
 -   **`UniqueID`** --- chave primária do usuário.
 -   **`nome`** --- nome do usuário.
--   **`senha`** --- senha do usuário.
+-   **`senha_hash`** --- senha do usuário armazenado como hash.
 
 ------------------------------------------------------------------------
 
@@ -85,24 +84,7 @@ A chave primária é composta por:
 
 ------------------------------------------------------------------------
 
-## 4. Tabela `porcentagem_alunos`
-
-Armazena percentuais de conclusão de atividades do aluno.
-
-  Chave   Tipo    Campo
-  ------- ------- -------------------------
-  PK      ---     `UniqueID`
-  FK      ---     `aluno_id`
-  ---     `int`   `porcentagem_conclusao`
-  ---     `int`   `porcentagem_acerto`
-
-### Campos
-
--   **`UniqueID`** --- chave primária do registro.
--   **`aluno_id`** --- identifica o aluno relacionado.
--   **`porcentagem_conclusao`** --- percentual de questões concluídas.
--   **`porcentagem_acerto`** --- percentual de questões respondidas
-    corretamente.
+## Calculo de porcentagem de conclusão será feito pelo back`
 
 ------------------------------------------------------------------------
 
@@ -129,62 +111,40 @@ questoes.UniqueID
 Uma questão pode estar associada a vários usuários por meio de
 `usuarios_questões`.
 
-### `usuarios` → `porcentagem_alunos`
-
-``` text
-usuarios.UniqueID
-       │
-       └──────> porcentagem_alunos.aluno_id
-```
-
-`aluno_id`, chave estrangeira relacionada à tabela
-`usuarios`.
 
 ------------------------------------------------------------------------
 
 ## Modelo relacional simplificado
 
 ``` text
-┌─────────────────────┐
-│       usuarios      │
-├─────────────────────┤
-│ PK UniqueID         │
-│    nome             │
-│    senha            │
-└─────────┬───────────┘
-          │
-          │ usuario_id
-                 ▼
-┌─────────────────────────────┐
-│      usuarios_questões      │
-├─────────────────────────────┤
-│ PK, FK1 usuario_id          │
-│ PK, FK2 questao_id          │
-│     data_conclusão          │
-│     resposta_usuario        │
-│     acertou                 │
-└──────────────┬──────────────┘
-               │ questao_id
-                          ▼
-┌─────────────────────┐
-│       questoes      │
-├─────────────────────┤
-│ PK UniqueID         │
-│    resposta         │
-│    enunciado        │
-└─────────────────────┘
-
-
-┌─────────────────────────────┐
-│     porcentagem_alunos      │
-├─────────────────────────────┤
-│ PK UniqueID                 │
-│ FK aluno_id                 │
-│    porcentagem_conclusao    │
-│    porcentagem_acerto       │
-└─────────────────────────────┘
-                     ▲
-            │ aluno_id
+┌──────────────────┐
+│     usuarios     │
+├──────────────────┤
+│ PK id            │
+│ nome             │
+│ email            │
+│ senha_hash       │
+└────────┬─────────┘
+         │
+         │ 1:N
+         ▼
+┌─────────────────────────┐
+│    usuarios_questoes    │
+├─────────────────────────┤
+│ PK/FK usuario_id        │
+│ PK/FK questao_id        │
+│ resposta_usuario        │
+│ data_conclusao          │
+│ acertou                 │
+└───────────┬─────────────┘
             │
-       usuarios
+            │ N:1
+            ▼
+┌──────────────────┐
+│     questoes     │
+├──────────────────┤
+│ PK id            │
+│ enunciado        │
+│ resposta_correta │
+└──────────────────┘
 ```
