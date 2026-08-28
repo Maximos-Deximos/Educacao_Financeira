@@ -1,4 +1,4 @@
-### Estrutura dos Módulos, Atividades, Avaliações e Progresso
+# Estrutura dos Módulos, Atividades, Avaliações e Progresso
 
 As atividades serão dividades em 2 distintos módulos:
 Básico - Atividades básicas de conhecimento fundamental sobre educação financeira - Contem questões fechadas
@@ -40,7 +40,7 @@ Exemplo
 
 Uma estudante recebe R$80,00 para gastar durante o mês. Ela precisa de R$35,00 para transporte escolar extra e deseja comprar uma camiseta de R$60,00. Se comprar a camiseta de imediato, faltará dinheiro para pagar o transporte. Logo é preciso separar nossas prioridades e nossos desejos
 
-# Questões
+### Questões
 
 1. Qual situação representa uma necessidade real?
 
@@ -91,7 +91,7 @@ Pontos principais
 • Compare o total das receitas com o total das despesas
 • Revise gastos desnecessários antes de assumir novas despesas
 
-# Questões
+### Questões
 
 1. Um dia, uma estudante decidiu organizar sua vida financeira. Ela anotou o dinheiro que recebeu, registrou os gastos com a alimentação, transporte, lazer e analisou quanto restou no final do mês. Do que chamamos essa organização?
 
@@ -144,7 +144,7 @@ Pontos principais
 • Reduzir desperdício de água, energia, alimentos e dinheiro
 • Priorize itens necessários dentro do limite disponível
 
-# Questões
+### Questões
 
 1. Ana recebeu R$80,00 para comprar alguns materiais escolares. Antes de ir à loja, ela fez uma lista do necessário, pesquisou os preços em duas lojas e verificou o quanto conseguiria gastar sem ultrapassar o valor disponível. Qual atitude de Ana representa melhor o consumo planejado?
 
@@ -201,7 +201,7 @@ Pontos principais
 • Definir finalidade para o dinheiro guardado
 • Separe a reserva de emergência de metas de consumo
 
-# Questões
+### Questões
 
 1. Júlia pretende comprar materiais para um curso no valor de R$360, daqui a seis meses. Após organizar seus gastos, ela percebeu que R$60,00 por mês ficam disponíveis. Qual atitude representa melhor o planejamento dessa meta financeira?
 
@@ -303,7 +303,7 @@ Pontos principais
 • Compare o valor total, e não somente a parcela
 • Evite acumular parcelas sem verificar o orçamento futuro
 
-# Questões
+### Questões
 
 1. João precisa comprar um computador para estudar e encontrou duas formas de pagamento para o mesmo produto.
 
@@ -360,7 +360,7 @@ Pontos principais
 • Interrompa o crescimento do problema evitando novas dívidas
 • Revise gastos supérfluos e desperdícios sem comprometer as suas necessidades básicas
 
-# Questões
+### Questões
 
 1. Uma família recebe R$3.000,00 por mês. Deste valor R$1.400,00 são usados em despesas essenciais e R$1.100,00 já estão comprometidos com prestações, cartão de crédito e empréstimos. Mesmo assim a família pretende assumir uma nova compra parcelada de R$400,00 por mês. Qual análise demonstra maior cuidado financeiro?
 
@@ -419,7 +419,7 @@ Pontos principais
 • Liquidez, risco e rentabilidade precisam ser analisados em conjunto
 • Promessa de ganho alto, risco baixo e acesso imediato exige desconfiança
 
-# Questões
+### Questões
 
 1. Depois de organizar seu orçamento, Rafael conseguiu guardar R$600,00. Em vez de gastar esse valor ele decidiu reservá-lo para um objetivo futuro. Depois ele aplicou parte desse dinheiro esperando obter algum rendimento. Considerando os conceitos estudados, como as duas etapas são descritas corretamente?
 
@@ -483,7 +483,7 @@ Pontos principais
 • Reserve recursos para imprevistos
 • Leia condições de seguros e conheça cobertura, prêmio e franquia
 
-# Questões
+### Questões
 
 1. Durante uma viagem, a família de Ana teve o celular furtado. Além do prejuízo com o aparelho, havia aplicativos bancários instalados nele. Qual atitude representa melhor uma resposta preventiva diante desse tipo de risco
 

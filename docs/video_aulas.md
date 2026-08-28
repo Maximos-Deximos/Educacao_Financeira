@@ -1,4 +1,4 @@
-### Vídeo Aulas Complementares
+# Vídeo Aulas Complementares
 As videoaulas serão usadas como materiais complementares aos conteúdos de educação financeira apresentados na plataforma. O objetivo é reforçar os assuntos trabalhados nos módulos por meio de situações práticas e narrativas relacionadas ao uso do dinheiro, planejamento financeiro, consumo, economia familiar e investimentos.
 Os vídeos selecionados pertencem à série "Eu e meu dinheiro" e serão associados aos conteúdos correspondentes dentro dos módulos. Eles servirão como apoio aos textos, exemplos e exercícios apresentados no site.
 

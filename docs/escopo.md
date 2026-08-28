@@ -1,4 +1,4 @@
-### ESCOPO GERAL DO PROJETO DE EDUCAÇÃO FINANCEIRA
+# ESCOPO GERAL DO PROJETO DE EDUCAÇÃO FINANCEIRA
 
 ## 1. Projeto de Educação Financeira
 
@@ -6,11 +6,11 @@ O projeto consiste no desenvolvimento de um site simples em formato MVP, Produto
 O objetivo principal é ensinar educação financeira para que o estudante aprenda conceitos, consulte exemplos, assista a videoaulas e realize exercícios relacionados aos conteúdos.
 Os conteúdos serão divididos em 2 módulos, um Básico e outro Intermediário. Cada módulo terá 4 matérias. Cada matéria terá 4 exercícios, totalizando 32 exercícios. Ao final de cada módulo, uma avaliação com 4 questões será liberada. Com as duas avaliações, o site terá 40 questões ao total.
 
-# 1.1 Objetivo geral
+### 1.1 Objetivo geral
 
 Desenvolver uma aplicação web simples para ensinar conceitos de educação financeira a estudantes da rede pública, com conteúdos organizados em 2 módulos, materiais complementares, exercícios e acompanhamento de progresso.
 
-# 1.2 Princípios do MVP
+### 1.2 Princípios do MVP
 
 • Conteúdo introdutório de educação financeira
 • Dois módulos, com conteúdo e atividades próprias
@@ -23,18 +23,18 @@ Desenvolver uma aplicação web simples para ensinar conceitos de educação fin
 ## 2. Estrutura dos Módulos, Atividades, Avaliações e Progresso
 A plataforma terá dois módulos. Cada módulo possuirá um conjunto de conteúdos e atividades para cada matéria.
 
-# 2.1 Organização das atividades
+### 2.1 Organização das atividades
 
 • 2 módulos de ensino, com 8 matérias ao total, 4 matérias em cada módulo
 • 20 exercícios ao total, 10 em cada módulo e 4 em cada matéria
 • 2 avaliações, uma para cada módulo finalizado, com 4 questões em cada avaliação
 • Cada questão da avaliação será referente a uma matéria específica do módulo
 
-# 2.3 Avaliações
+### 2.3 Avaliações
 
 Ao terminar cada módulo, uma avaliação referente ao conteúdo daquele módulo será liberada. Cada avaliação terá 4 questões, uma para cada matéria estudada no módulo. As avaliações não atribuem nota ao aluno e entram no percentual de conclusão do site.
 
-# 2.4 Mapa da Aprendizagem
+### 2.4 Mapa da Aprendizagem
 
 • 1. O estudante entra na plataforma depois de se cadastrar
 • 2. Escolhe um dos módulos disponíveis
@@ -53,7 +53,7 @@ Os vídeos selecionados pertencem à série "Eu e meu dinheiro" e serão associa
 
 Referir a video_aulas.md para exemplos de video aulas a serem utilizadas
 
-# 5.1 Forma de utilização das videoaulas na plataforma
+### 5.1 Forma de utilização das videoaulas na plataforma
 As videoaulas funcionarão como apoio aos conteúdos escritos e não substituirão as matérias presentes nos módulos.
 Dentro da plataforma, os vídeos serão vinculados aos assuntos correspondentes. O estudante estudará o conteúdo escrito, consultará exemplos, terá acesso ao vídeo relacionado ao tema e realizará os exercícios previstos.
 A utilização dos vídeos busca apresentar os conceitos financeiros por meio de situações práticas, facilitando a relação entre o conteúdo estudado e decisões financeiras presentes no cotidiano.
@@ -103,7 +103,7 @@ JavaScript
 
 TODO: add informações basicas sobre cada linguagem de programação. Entendam que estamos lidando com devs que talvez nunca tenham programaram antes.
 
-# HTML
+### HTML
 
 HTML será responsável pela estrutura das páginas e pelos elementos do site.
 
@@ -117,7 +117,7 @@ HTML será responsável pela estrutura das páginas e pelos elementos do site.
 • Cabeçalho.
 • Rodapé.
 
-# CSS
+### CSS
 
 CSS será responsável pela aparência do site e pelo controle visual dos elementos.
 
@@ -131,7 +131,7 @@ CSS será responsável pela aparência do site e pelo controle visual dos elemen
 • Organização das páginas.
 • Responsividade para diferentes tamanhos de tela.
 
-# JavaScript
+### JavaScript
 
 JavaScript será responsável pelas partes interativas do Front End.
 
@@ -147,7 +147,7 @@ JavaScript será responsável pelas partes interativas do Front End.
 
 O Back End será desenvolvido em Python com o framework FastAPI. Python foi escolhido por possuir sintaxe acessível para estudantes iniciantes, ampla documentação e integração com bancos de dados, APIs, autenticação, testes e bibliotecas usadas em aplicações web.
 
-# Responsabilidades do Back End
+## Responsabilidades do Back End
 
 • Cadastro e login.
 • Comunicação com o banco de dados.
@@ -159,12 +159,12 @@ O Back End será desenvolvido em Python com o framework FastAPI. Python foi esco
 • Validação das informações recebidas.
 • Segurança das contas.
 
-# FastAPI
+### FastAPI
 
 FastAPI será usado junto com Python para construir a API do projeto. A API funciona como ligação entre o Front End e o banco de dados. Quando o estudante concluir uma atividade, o JavaScript envia essa informação para a API. O Back End recebe a solicitação, verifica os dados, registra a conclusão no PostgreSQL, calcula o novo progresso e envia o resultado para o Front End.
 FastAPI foi escolhido por possuir estrutura simples, boa integração com Python e geração automática de documentação dos endpoints da API. Isso ajuda o grupo do Front End a entender quais informações precisa enviar e receber.
 
-# 7.4 Comunicação entre Front End e Back End
+### 7.4 Comunicação entre Front End e Back End
 
 A comunicação ocorrerá por uma API REST usando JSON.
 
@@ -178,17 +178,17 @@ Exemplo 2
 • Front End envia: POST /atividades/15/concluir
 • Back End registra a conclusão da atividade número 15 e recalcula o progresso.
 
-# Separação de responsabilidades
+## Separação de responsabilidades
 
 • Front End cuida daquilo visto e usado pelo estudante.
 • Back End cuida das regras, dados e funcionamento interno.
 • Banco de Dados guarda as informações de forma estruturada.
 
-# 7.5 Motivos das escolhas
+### 7.5 Motivos das escolhas
 
 A arquitetura foi escolhida pensando no nível da equipe e no tamanho do MVP. HTML, CSS e JavaScript oferecem uma base para o desenvolvimento web. Python apresenta sintaxe acessível para estudantes iniciantes. FastAPI simplifica a construção da API. O conjunto permite desenvolver o fluxo completo do site sem introduzir ferramentas avançadas sem necessidade.
 
-# 7.6 Arquitetura final
+### 7.6 Arquitetura final
 
 ```text
 Navegador do usuario
