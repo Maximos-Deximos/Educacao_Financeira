@@ -90,19 +90,49 @@ O frontend poderá trabalhar com dados fictícios enquanto o banco está sendo d
 
 # Como configurar ambiente de trabalho
 
+clone o repositorio
+
+git clone https://github.com/Maximos-Deximos/Educacao_Financeira
+
 cd /localização_do_projeto_clonado/Educação_Financeira
 
-Localize o arquivo chamado .env.example:
-```text
-POSTGRES_DB=investimentes
-POSTGRES_USER=investimentes_app
-POSTGRES_PASSWORD="SENHA"
-POSTGRES_PORT=5432
-```
-Renomeie o arquivo para somente ".env", e adicione a senha de "POSTGRES_PASSWORD="
+Localize o arquivo chamado .env.example
 
-- Configure a conexão no DBeaver para trabalhar no banco de dados
+- Arquivos que começam com "." são arquivos ocultos, Ctrl + h para deixar-los visiveis (ou ls -a)
 
-- Configurações das .venv irão ser feitas Quando o banco de dados estiver pronto
+Crie um arquivo chamado .env, e adicione a senha de "POSTGRES_PASSWORD="
 
+Configure a conexão no DBeaver para trabalhar no banco de dados
 
+Configurações das .venv irão ser feitas Quando o banco de dados estiver pronto
+
+## inicie o container docker
+
+docker compose up -d
+
+Verifique se a instalação da imagem está correta com
+
+docker ps
+
+deve estar:
+
+CONTAINER ID   IMAGE         COMMAND                  CREATED          STATUS          PORTS                                         NAMES
+xxxxxxxxxxxx   postgres:18   "docker-entrypoint.s…"   10 seconds ago   Up 10 seconds   0.0.0.0:5050->5432/tcp, [::]:5050->5432/tcp   investimentes_db
+
+## Configure o DBeaver
+
+Crie uma nova conexão
+
+Adicione os dados do banco de dados que estão localizados no arquivo .env
+
+Pronto, seu ambiente de trabalho está completo.
+
+### Limpando ambiente de trabalho
+
+Quando você finalizar seus desenvolvimentos do dia
+
+Derrube o container docker com:
+
+docker compose down
+
+- container tem que ser levantado toda vez que você for trabalhar no banco de dados
