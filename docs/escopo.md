@@ -11,7 +11,7 @@ Os conteúdos serão divididos em 2 módulos, um Básico e outro Intermediário.
 Desenvolver uma aplicação web simples para ensinar conceitos de educação financeira a estudantes da rede pública, com conteúdos organizados em 2 módulos, materiais complementares, exercícios e acompanhamento de progresso.
 
 ### 1.2 Princípios do MVP
-
+```text
 • Conteúdo introdutório de educação financeira
 • Dois módulos, com conteúdo e atividades próprias
 • Percentual de conclusão por módulo e percentual geral
@@ -19,23 +19,23 @@ Desenvolver uma aplicação web simples para ensinar conceitos de educação fin
 • Banco de dados relacional
 • Sem coleta de dados pessoais
 • Sem notas para os alunos, somente percentual de conclusão
-
+```
 ## 2. Estrutura dos Módulos, Atividades, Avaliações e Progresso
 A plataforma terá dois módulos. Cada módulo possuirá um conjunto de conteúdos e atividades para cada matéria.
 
 ### 2.1 Organização das atividades
-
+```text
 • 2 módulos de ensino, com 8 matérias ao total, 4 matérias em cada módulo
 • 20 exercícios ao total, 10 em cada módulo e 4 em cada matéria
 • 2 avaliações, uma para cada módulo finalizado, com 4 questões em cada avaliação
 • Cada questão da avaliação será referente a uma matéria específica do módulo
-
+```
 ### 2.3 Avaliações
 
 Ao terminar cada módulo, uma avaliação referente ao conteúdo daquele módulo será liberada. Cada avaliação terá 4 questões, uma para cada matéria estudada no módulo. As avaliações não atribuem nota ao aluno e entram no percentual de conclusão do site.
 
 ### 2.4 Mapa da Aprendizagem
-
+```text
 • 1. O estudante entra na plataforma depois de se cadastrar
 • 2. Escolhe um dos módulos disponíveis
 • 3. Escolhe a matéria a ser estudada, liberando os materiais de estudo e exercícios
@@ -44,7 +44,7 @@ Ao terminar cada módulo, uma avaliação referente ao conteúdo daquele módulo
 • 6. O sistema registra a conclusão das atividades
 • 7. O percentual do módulo é atualizado
 • 8. O percentual geral é recalculado
-
+```
 Referir a modulos.md para exemplos de questões/modulos a serem adicionados
 
 ## 5. Vídeo Aulas Complementares
@@ -78,7 +78,7 @@ O site será organizado em páginas voltadas ao cadastro, acompanhamento do prog
 └─────────────────────────────┘────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 ## 6.1 Componentes principais
-
+```text
 • Header e Footer
 • Cards de módulos
 • Barra de progresso, com referência ao uso de gráfico de pizza
@@ -86,7 +86,7 @@ O site será organizado em páginas voltadas ao cadastro, acompanhamento do prog
 • Lista e Link de vídeos
 • Lista de atividades
 • Botão de Logout
-
+```
 ### 7. Banco de dados, linguagens e arquitetura
 
 ## 7.1 Banco de dados
@@ -106,7 +106,7 @@ TODO: add informações basicas sobre cada linguagem de programação. Entendam 
 ### HTML
 
 HTML será responsável pela estrutura das páginas e pelos elementos do site.
-
+```text
 • Títulos.
 • Textos.
 • Botões.
@@ -116,11 +116,11 @@ HTML será responsável pela estrutura das páginas e pelos elementos do site.
 • Exercícios.
 • Cabeçalho.
 • Rodapé.
-
+```
 ### CSS
 
 CSS será responsável pela aparência do site e pelo controle visual dos elementos.
-
+```text
 • Cores.
 • Fontes.
 • Espaçamentos.
@@ -130,11 +130,11 @@ CSS será responsável pela aparência do site e pelo controle visual dos elemen
 • Cards.
 • Organização das páginas.
 • Responsividade para diferentes tamanhos de tela.
-
+```
 ### JavaScript
 
 JavaScript será responsável pelas partes interativas do Front End.
-
+```text
 • Carregar informações recebidas do Back End.
 • Exibir conteúdos.
 • Atualizar barras de progresso.
@@ -142,13 +142,13 @@ JavaScript será responsável pelas partes interativas do Front End.
 • Navegar entre atividades.
 • Enviar respostas dos exercícios.
 • Atualizar informações sem recarregar toda a página quando necessário.
-
+```
 ## 7.3 Back End
 
 O Back End será desenvolvido em Python com o framework FastAPI. Python foi escolhido por possuir sintaxe acessível para estudantes iniciantes, ampla documentação e integração com bancos de dados, APIs, autenticação, testes e bibliotecas usadas em aplicações web.
 
 ## Responsabilidades do Back End
-
+```text
 • Cadastro e login.
 • Comunicação com o banco de dados.
 • Registro das atividades concluídas.
@@ -158,7 +158,7 @@ O Back End será desenvolvido em Python com o framework FastAPI. Python foi esco
 • Controle das regras do sistema.
 • Validação das informações recebidas.
 • Segurança das contas.
-
+```
 ### FastAPI
 
 FastAPI será usado junto com Python para construir a API do projeto. A API funciona como ligação entre o Front End e o banco de dados. Quando o estudante concluir uma atividade, o JavaScript envia essa informação para a API. O Back End recebe a solicitação, verifica os dados, registra a conclusão no PostgreSQL, calcula o novo progresso e envia o resultado para o Front End.
@@ -167,7 +167,7 @@ FastAPI foi escolhido por possuir estrutura simples, boa integração com Python
 ### 7.4 Comunicação entre Front End e Back End
 
 A comunicação ocorrerá por uma API REST usando JSON.
-
+```text
 Exemplo 1
 
 • Front End solicita: GET /modulos
@@ -177,13 +177,13 @@ Exemplo 2
 
 • Front End envia: POST /atividades/15/concluir
 • Back End registra a conclusão da atividade número 15 e recalcula o progresso.
-
+```
 ## Separação de responsabilidades
-
+```text
 • Front End cuida daquilo visto e usado pelo estudante.
 • Back End cuida das regras, dados e funcionamento interno.
 • Banco de Dados guarda as informações de forma estruturada.
-
+```
 ### 7.5 Motivos das escolhas
 
 A arquitetura foi escolhida pensando no nível da equipe e no tamanho do MVP. HTML, CSS e JavaScript oferecem uma base para o desenvolvimento web. Python apresenta sintaxe acessível para estudantes iniciantes. FastAPI simplifica a construção da API. O conjunto permite desenvolver o fluxo completo do site sem introduzir ferramentas avançadas sem necessidade.
