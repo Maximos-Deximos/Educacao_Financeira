@@ -158,6 +158,7 @@ Armazena as questões disponíveis.
 -   **`UniqueID`** --- chave primária da questão.
 -   **`resposta`** --- resposta associada à questão.
 -   **`enunciado`** --- texto/enunciado da questão.
+-   **`enunciado`** --- modula da questão basico(1)/avançado(2).
 
 ------------------------------------------------------------------------
 
@@ -246,15 +247,16 @@ Uma questão pode estar associada a vários usuários por meio de
 │ resposta_usuario        │
 │ data_conclusao          │
 │ acertou                 │
-└───────────┬─────────────┘
-            │
+└─────────────────────────┘
+            ▲
             │ N:1
-            ▼
-┌──────────────────┐
-│     questoes     │
-├──────────────────┤
-│ PK id            │
-│ enunciado        │
-│ resposta_correta │
-└──────────────────┘
+            │
+┌─────────────────────┐
+│      QUESTOES       │
+├─────────────────────┤
+│ id                  │
+│ enunciado           │
+│ resposta_correta    │
+│ modulo              │
+└─────────────────────┘
 ```
