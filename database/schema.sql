@@ -16,22 +16,22 @@
 
 -- 1. TABELA usuarios
 CREATE TABLE IF NOT EXISTS usuarios (
-    id         BIGINT GENERATED ALWAYS AS IDENTITY,
+    usuario_id BIGINT GENERATED ALWAYS AS IDENTITY,
     nome       VARCHAR(100) NOT NULL,
     senha_hash TEXT         NOT NULL,
 
-    CONSTRAINT pk_usuarios PRIMARY KEY (id)
+    CONSTRAINT pk_usuarios PRIMARY KEY (usuario_id)
 );
 
 -- 2. TABELA questoes
 CREATE TABLE IF NOT EXISTS questoes (
-    id               BIGINT  GENERATED ALWAYS AS IDENTITY,
+    questao_id       BIGINT  GENERATED ALWAYS AS IDENTITY,
     enunciado        TEXT    NOT NULL,
     resposta_correta TEXT    NOT NULL,
     -- 1 = módulo básico | 2 = módulo intermediário
     modulo           SMALLINT NOT NULL,
 
-    CONSTRAINT pk_questoes      PRIMARY KEY (id),
+    CONSTRAINT pk_questoes      PRIMARY KEY (questao_id),
     CONSTRAINT chk_questoes_modulo CHECK (modulo IN (1, 2))
 );
 
@@ -47,12 +47,12 @@ CREATE TABLE IF NOT EXISTS usuarios_questoes (
 
     CONSTRAINT fk_usuarios_questoes_usuarios
         FOREIGN KEY (usuario_id)
-        REFERENCES usuarios (id)
+        REFERENCES usuarios (usuario_id)
         ON DELETE CASCADE,
 
     CONSTRAINT fk_usuarios_questoes_questoes
         FOREIGN KEY (questao_id)
-        REFERENCES questoes (id)
+        REFERENCES questoes (questao_id)
         ON DELETE CASCADE
 );
 
