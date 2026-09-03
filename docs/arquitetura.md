@@ -43,7 +43,7 @@ Educação_Financeira/
 │   │
 │   ├── css/                        # Estilos da aplicação
 │   │   ├── reset.css               # Remove diferenças de estilos padrão entre navegadores
-│   │   ├── variables.css           # Centraliza valores reutilizáveis e facilita a criação de temas
+│   │   ├── variables.css           # Centraliza valores reutilizáveis e facilita a criação de 
 │   │   ├── global.css              # Estilos gerais utilizados em toda a aplicação
 │   │   │
 │   │   ├── components/             # Estilos de componentes reutilizáveis
@@ -79,12 +79,12 @@ Educação_Financeira/
 │       ├── images/                 # Imagens
 │       └── icons/                  # Ícones
 │
-└──backend/
+├──backend/
 │  └──app/
 │  ├── main.py
 │  ├── database.py
 │  ├── models/
-│  │   ├── user.py
+│  │   ├── usario.py
 │  │   ├── submission.py
 │  │   ├── answer.py
 │  │   └── question.py
@@ -158,7 +158,7 @@ Armazena as questões disponíveis.
 -   **`UniqueID`** --- chave primária da questão.
 -   **`resposta`** --- resposta associada à questão.
 -   **`enunciado`** --- texto/enunciado da questão.
--   **`enunciado`** --- modula da questão basico(1)/avançado(2).
+-   **`modulo`** --- modulo da questão basico(1)/avançado(2).
 
 ------------------------------------------------------------------------
 
@@ -232,7 +232,7 @@ Uma questão pode estar associada a vários usuários por meio de
 ┌──────────────────┐
 │     usuarios     │
 ├──────────────────┤
-│ PK id            │
+│ PK usuario_id    │
 │ nome             │
 │ senha_hash       │
 └────────┬─────────┘
@@ -254,7 +254,7 @@ Uma questão pode estar associada a vários usuários por meio de
 ┌─────────────────────┐
 │      QUESTOES       │
 ├─────────────────────┤
-│ id                  │
+│ PK questao_id       │
 │ enunciado           │
 │ resposta_correta    │
 │ modulo              │
