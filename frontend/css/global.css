@@ -223,13 +223,7 @@ abbr {
 .icon1, .icon2, .icon3{
     margin-bottom: -20px;
 }
-/*Configurações_rodapé*/
-footer{
-    margin-top: 5px;
-    color: #f7c59f;
-    background-color: #ff6b35;
-    padding: 10px;
-}
+
 .info{
     margin-top: 5px;
 }
