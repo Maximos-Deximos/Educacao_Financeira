@@ -90,11 +90,28 @@ O frontend poderá trabalhar com dados fictícios enquanto o banco está sendo d
 
 # Como configurar ambiente de trabalho
 
+
 clone o repositorio
 
 git clone https://github.com/Maximos-Deximos/Educacao_Financeira
 
 cd /localização_do_projeto_clonado/Educação_Financeira
+
+## Configuração de ambienta para desenvolvimento frontend
+
+## Inicialize um servidor http para carregar componentes do frontend
+
+python3 -m http.server [porta_de_sua_escolha]
+
+- exemplo: pyhton3 -m http.server 6767
+
+para acessar o servidor criado basta escrever no navegador:
+
+http://localhost:[porta]
+
+- exemplo: http://localhost:6767
+
+## Configuração de desenvolvimento backend
 
 Localize o arquivo chamado .env.example
 
@@ -105,6 +122,20 @@ Crie um arquivo chamado .env, e adicione a senha de "POSTGRES_PASSWORD="
 Configure a conexão no DBeaver para trabalhar no banco de dados
 
 Configurações das .venv irão ser feitas Quando o banco de dados estiver pronto
+
+
+## Inicialize um servidor http para carregar componentes do frontend
+
+python3 -m http.server [porta_de_sua_escolha]
+
+- exemplo: pyhton3 -m http.server 6767
+
+para acessar o servidor criado basta escrever no navegador:
+
+http://localhost:[porta]
+
+- exemplo: http://localhost:6767
+
 
 ## inicie o container docker
 
