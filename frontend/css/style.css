@@ -1,0 +1,351 @@
+/* ---------- reset basico ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --laranja: #FF6B35;
+  --pessego: #F7C59F;
+  --creme: #EFEFD0;
+  --texto-escuro: #3A2A1E;
+  --texto-suave: #7A6A5A;
+  --erro: #C0392B;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--texto-escuro);
+  background: var(--creme);
+}
+
+/* ---------- layout geral ---------- */
+.pagina {
+  display: flex;
+  min-height: 100vh;
+}
+
+.lado-form {
+  flex: 1 1 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background: var(--creme);
+}
+
+.conteudo-form {
+  width: 100%;
+  max-width: 380px;
+}
+
+.lado-apresentacao {
+  flex: 1 1 55%;
+  background: var(--laranja);
+  color: var(--creme);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.apresentacao-conteudo {
+  max-width: 420px;
+  text-align: left;
+}
+
+.apresentacao-conteudo h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.apresentacao-conteudo p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(239, 239, 208, 0.85);
+}
+
+/* ---------- marca / titulo ---------- */
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--laranja);
+  margin-bottom: 42px;
+}
+
+.marca-texto {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--texto-escuro);
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtexto {
+  color: var(--texto-suave);
+  font-size: 14px;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+/* ---------- formulario ---------- */
+.campo {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.campo label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--texto-escuro);
+}
+
+.campo input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--pessego);
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  color: var(--texto-escuro);
+  transition: border-color 0.15s ease;
+}
+
+.campo input:focus {
+  outline: none;
+  border-color: var(--laranja);
+}
+
+.campo input.invalido {
+  border-color: var(--erro);
+}
+
+.campo-senha {
+  position: relative;
+}
+
+.campo-senha input {
+  padding-right: 40px;
+}
+
+.botao-olho {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--texto-suave);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.botao-olho:hover {
+  color: var(--laranja);
+}
+
+.erro {
+  display: block;
+  min-height: 16px;
+  font-size: 12px;
+  color: var(--erro);
+  margin-top: 4px;
+}
+
+.botao-principal {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: var(--laranja);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+
+.botao-principal:hover {
+  background: #e85a26;
+}
+
+.botao-principal:active {
+  transform: scale(0.98);
+}
+
+.mensagem-status {
+  margin-top: 14px;
+  font-size: 13px;
+  text-align: center;
+  min-height: 18px;
+}
+
+.mensagem-status.sucesso {
+  color: #2E7D32;
+}
+
+.mensagem-status.falha {
+  color: var(--erro);
+}
+
+.rodape-form {
+  margin-top: 26px;
+  font-size: 13px;
+  color: var(--texto-suave);
+  text-align: center;
+}
+
+.link-botao {
+  background: none;
+  border: none;
+  color: var(--laranja);
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+/* ---------- ilustracao do lado direito ---------- */
+.ilustracao {
+  position: relative;
+  width: 320px;
+  height: 260px;
+  margin: 0 auto 30px;
+}
+
+.grafico-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.barra {
+  fill: rgba(239, 239, 208, 0.18);
+  transform-origin: bottom;
+  animation: crescer 2.4s ease-in-out infinite alternate;
+}
+
+.barra-2 { animation-delay: 0.15s; }
+.barra-3 { animation-delay: 0.3s; }
+.barra-4 { animation-delay: 0.45s; }
+
+@keyframes crescer {
+  from { transform: scaleY(0.85); }
+  to   { transform: scaleY(1); }
+}
+
+.linha-tendencia {
+  opacity: 0.9;
+}
+
+.ponto {
+  fill: #EFEFD0;
+}
+
+.brilho {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  animation: flutuar 3.6s ease-in-out infinite;
+}
+
+.brilho-1 { top: 10%;  left: 4%;  animation-delay: 0s; }
+.brilho-2 { top: 62%;  left: 88%; width: 16px; height: 16px; animation-delay: 1s; }
+.brilho-3 { top: 4%;   left: 82%; width: 14px; height: 14px; animation-delay: 2s; }
+
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0) scale(1);   opacity: 0.85; }
+  50%      { transform: translateY(-12px) scale(1.1); opacity: 1; }
+}
+
+/* respeita quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  .barra, .brilho {
+    animation: none;
+  }
+}
+
+/* ---------- modal de cadastro ---------- */
+.fundo-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(58, 42, 30, 0.55);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.fundo-modal.aberto {
+  display: flex;
+}
+
+.modal-cadastro {
+  background: #fff;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 12px;
+  padding: 32px 28px;
+  position: relative;
+  box-shadow: 0 20px 45px rgba(58, 42, 30, 0.25);
+}
+
+.modal-cadastro h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.fechar-modal {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--texto-suave);
+  cursor: pointer;
+}
+
+.fechar-modal:hover {
+  color: var(--laranja);
+}
+
+/* ---------- responsivo ---------- */
+@media (max-width: 860px) {
+  .pagina {
+    flex-direction: column-reverse;
+  }
+
+  .lado-apresentacao {
+    padding: 40px 24px;
+    min-height: 260px;
+  }
+
+  .apresentacao-conteudo h2 {
+    font-size: 24px;
+  }
+
+  .ilustracao {
+    width: 220px;
+    height: 180px;
+    margin-bottom: 18px;
+  }
+}

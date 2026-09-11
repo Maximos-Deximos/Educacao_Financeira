@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvestiMentes - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="pagina">
+
+    <!-- lado esquerdo: formulario -->
+    <section class="lado-form">
+      <div class="conteudo-form">
+
+        <div class="marca">
+          <span class="marca-icone">
+            <svg viewBox="0 0 24 24" width="26" height="26">
+              <path d="M12 2 L14.4 9.2 L22 12 L14.4 14.8 L12 22 L9.6 14.8 L2 12 L9.6 9.2 Z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="marca-texto">InvestiMentes</span>
+        </div>
+
+        <h1>Bem-vindo de volta</h1>
+        <p class="subtexto">Entre com sua conta para acompanhar seus estudos de educação financeira.</p>
+
+        <form id="form-login" novalidate>
+
+          <div class="campo">
+            <label for="login-usuario">Usuário</label>
+            <input
+              type="text"
+              id="login-usuario"
+              name="usuario"
+              placeholder="seu.usuario"
+              autocomplete="username"
+              maxlength="20"
+              required
+            >
+            <span class="erro" id="erro-login-usuario"></span>
+          </div>
+
+          <div class="campo">
+            <label for="login-senha">Senha</label>
+            <div class="campo-senha">
+              <input
+                type="password"
+                id="login-senha"
+                name="senha"
+                placeholder="••••••••"
+                autocomplete="current-password"
+                required
+              >
+              <button type="button" class="botao-olho" id="botao-olho-login" aria-label="Mostrar senha">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 5c-5 0-9.27 3.11-11 7.5 1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5C21.27 8.11 17 5 12 5zm0 12.5A5 5 0 1 1 12 7.5a5 5 0 0 1 0 10zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+              </button>
+            </div>
+            <span class="erro" id="erro-login-senha"></span>
+          </div>
+
+          <button type="submit" class="botao-principal">Entrar</button>
+
+          <p class="mensagem-status" id="mensagem-login"></p>
+
+        </form>
+
+        <p class="rodape-form">
+          Ainda não tem conta?
+          <button type="button" class="link-botao" id="abrir-cadastro">Criar conta</button>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- lado direito: apresentacao -->
+    <aside class="lado-apresentacao">
+      <div class="apresentacao-conteudo">
+
+        <div class="ilustracao" id="ilustracao">
+          <svg viewBox="0 0 320 260" class="grafico-svg">
+            <line x1="20" y1="220" x2="300" y2="220" stroke="#EFEFD0" stroke-opacity="0.35" stroke-width="2"/>
+            <rect class="barra barra-1" x="50"  y="150" width="34" height="70" rx="6"/>
+            <rect class="barra barra-2" x="105" y="110" width="34" height="110" rx="6"/>
+            <rect class="barra barra-3" x="160" y="70"  width="34" height="150" rx="6"/>
+            <rect class="barra barra-4" x="215" y="30"  width="34" height="190" rx="6"/>
+            <path class="linha-tendencia" d="M67 145 L122 100 L177 60 L232 25" fill="none" stroke="#EFEFD0" stroke-width="3" stroke-linecap="round"/>
+            <circle class="ponto" cx="67" cy="145" r="5"/>
+            <circle class="ponto" cx="122" cy="100" r="5"/>
+            <circle class="ponto" cx="177" cy="60" r="5"/>
+            <circle class="ponto" cx="232" cy="25" r="5"/>
+          </svg>
+
+          <svg class="brilho brilho-1" viewBox="0 0 24 24"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#EFEFD0"/></svg>
+          <svg class="brilho brilho-2" viewBox="0 0 24 24"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#F7C59F"/></svg>
+          <svg class="brilho brilho-3" viewBox="0 0 24 24"><path d="M12 0 L14.5 9.5 L24 12 L14.5 14.5 L12 24 L9.5 14.5 L0 12 L9.5 9.5 Z" fill="#EFEFD0"/></svg>
+        </div>
+
+        <h2>Educação financeira não precisa ser complicada</h2>
+        <p>Organize seus estudos, acompanhe seu progresso e comece a construir bons hábitos com o seu dinheiro.</p>
+
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- modal de cadastro -->
+  <div class="fundo-modal" id="fundo-modal">
+    <div class="modal-cadastro" role="dialog" aria-modal="true" aria-labelledby="titulo-cadastro">
+      <button type="button" class="fechar-modal" id="fechar-modal" aria-label="Fechar">&times;</button>
+
+      <h2 id="titulo-cadastro">Criar conta</h2>
+      <p class="subtexto">Use só letras e números no usuário, sem espaços ou símbolos.</p>
+
+      <form id="form-cadastro" novalidate>
+
+        <div class="campo">
+          <label for="cad-usuario">Usuário</label>
+          <input
+            type="text"
+            id="cad-usuario"
+            name="usuario"
+            placeholder="ex: joao123"
+            maxlength="20"
+            required
+          >
+          <span class="erro" id="erro-cad-usuario"></span>
+        </div>
+
+        <div class="campo">
+          <label for="cad-senha">Senha</label>
+          <input
+            type="password"
+            id="cad-senha"
+            name="senha"
+            placeholder="mínimo 6 caracteres"
+            minlength="6"
+            required
+          >
+          <span class="erro" id="erro-cad-senha"></span>
+        </div>
+
+        <div class="campo">
+          <label for="cad-senha-confirma">Confirmar senha</label>
+          <input
+            type="password"
+            id="cad-senha-confirma"
+            name="senha-confirma"
+            placeholder="repita a senha"
+            minlength="6"
+            required
+          >
+          <span class="erro" id="erro-cad-senha-confirma"></span>
+        </div>
+
+        <button type="submit" class="botao-principal">Criar conta</button>
+
+        <p class="mensagem-status" id="mensagem-cadastro"></p>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
