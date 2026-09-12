@@ -1,25 +1,3 @@
-/* ---------- reset basico ---------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --laranja: #FF6B35;
-  --pessego: #F7C59F;
-  --creme: #EFEFD0;
-  --texto-escuro: #3A2A1E;
-  --texto-suave: #7A6A5A;
-  --erro: #C0392B;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--texto-escuro);
-  background: var(--creme);
-}
-
 /* ---------- layout geral ---------- */
 .pagina {
   display: flex;
