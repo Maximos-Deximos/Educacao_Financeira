@@ -119,21 +119,11 @@ h1 {
   padding-right: 40px;
 }
 
-.botao-olho {
+.campo-senha .botao-olho {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: var(--texto-suave);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.botao-olho:hover {
-  color: var(--laranja);
 }
 
 .erro {
@@ -142,28 +132,6 @@ h1 {
   font-size: 12px;
   color: var(--erro);
   margin-top: 4px;
-}
-
-.botao-principal {
-  width: 100%;
-  padding: 13px;
-  border: none;
-  border-radius: 8px;
-  background: var(--laranja);
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 6px;
-  transition: background 0.15s ease, transform 0.05s ease;
-}
-
-.botao-principal:hover {
-  background: #e85a26;
-}
-
-.botao-principal:active {
-  transform: scale(0.98);
 }
 
 .mensagem-status {
@@ -186,17 +154,6 @@ h1 {
   font-size: 13px;
   color: var(--texto-suave);
   text-align: center;
-}
-
-.link-botao {
-  background: none;
-  border: none;
-  color: var(--laranja);
-  font-weight: 600;
-  font-size: 13px;
-  cursor: pointer;
-  text-decoration: underline;
-  padding: 0;
 }
 
 /* ---------- ilustracao do lado direito ---------- */
@@ -294,16 +251,8 @@ h1 {
   position: absolute;
   top: 14px;
   right: 14px;
-  background: none;
-  border: none;
   font-size: 22px;
   line-height: 1;
-  color: var(--texto-suave);
-  cursor: pointer;
-}
-
-.fechar-modal:hover {
-  color: var(--laranja);
 }
 
 /* ---------- responsivo ---------- */
