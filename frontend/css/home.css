@@ -58,29 +58,10 @@
   text-decoration: none;
 }
 .home-page .home-exit {
-  /* Dimensões e aparência de .Login1 e .Login1 a no portal. */
+  /* Posicionamento no cabeçalho; a aparência vem de .btn .btn--contorno. */
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 100px;
-  height: 50px;
-  border: 2px solid #ff6b35;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  border-radius: 8px;
-  font: inherit;
-  font-weight: bold;
-  color: #ff6b35;
-  opacity: 1;
-}
-.home-page .home-exit:disabled { cursor: not-allowed; }
-.home-page .home-exit:not(:disabled):hover {
-  background-color: #ff6b35;
-  border-color: white;
-  color: white;
 }
 .home-page .home-main { flex: 1; padding-block: 56px; line-height: 1.6; }
 .home-page .home-intro { max-width: 700px; margin-bottom: 44px; }

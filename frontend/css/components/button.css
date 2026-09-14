@@ -1,0 +1,88 @@
+/* ---------- botão base ---------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--laranja);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.05s ease;
+}
+
+.btn:focus-visible {
+    outline: 3px solid var(--laranja);
+    outline-offset: 3px;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+/* ---------- variantes ---------- */
+.btn--primario {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+    color: #fff;
+}
+
+.btn--primario:hover:not(:disabled) {
+    background-color: #e85a26;
+    border-color: #e85a26;
+}
+
+.btn--contorno {
+    background-color: #fff;
+    border-color: var(--laranja);
+    color: var(--laranja);
+}
+
+.btn--contorno:hover:not(:disabled) {
+    background-color: var(--laranja);
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn--ghost {
+    padding: 0;
+    border: none;
+    color: var(--laranja);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.btn--ghost:hover:not(:disabled) {
+    color: #e85a26;
+}
+
+.btn--icone {
+    padding: 0;
+    border: none;
+    color: var(--texto-suave);
+}
+
+.btn--icone:hover:not(:disabled) {
+    color: var(--laranja);
+}
+
+/* ---------- tamanhos ---------- */
+.btn--grande {
+    min-width: 350px;
+    min-height: 60px;
+    font-size: 22px;
+}
+
+.btn--bloco {
+    width: 100%;
+}

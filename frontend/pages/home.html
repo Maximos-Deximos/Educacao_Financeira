@@ -3,59 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sua área de estudos | InvestiMentes</title>
+
+  <title>Home - InvestiMentes</title>
+
   <link rel="icon" href="../assets/icons/logo_invest.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/layout/footer.css">
   <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/components/button.css">
+
 </head>
 <body class="home-page">
   <a class="home-skip-link" href="#conteudo">Ir para o conteúdo</a>
+  
   <header class="home-header">
     <a class="home-brand" href="../index.html" aria-label="InvestiMentes — portal inicial">InvestiMentes</a>
     <!-- Sem sessão implementada: nenhuma ação de logout ou redirecionamento. -->
-    <button class="home-exit" type="button" disabled title="Sair indisponível: ainda não há sessão implementada.">Sair</button>
+    <button class="home-exit btn btn--contorno" type="button" disabled title="Sair indisponível: ainda não há sessão implementada.">Sair</button>
   </header>
+
   <main id="conteudo" class="home-container home-main" tabindex="-1">
+
     <section class="home-intro" aria-labelledby="home-title">
       <p class="home-eyebrow">Aprender para o dia a dia</p>
-      <h1 id="home-title">Sua área de estudos</h1>
-      <p>Conheça os módulos de educação financeira e os assuntos que farão parte dos seus estudos.</p>
+      <h1 id="home-title">Bem vindo [nome]</h1> <!-- Substituir [nome] pelo nome do usuário -->
+      <p>Aprenda educação financeira de forma prática e objetiva.</p>
+
     </section>
+    
     <section aria-labelledby="modules-title">
+
       <div class="home-section-heading">
         <h2 id="modules-title">Módulos de aprendizagem</h2>
-        <p>Do cuidado com o dinheiro às decisões para o futuro.</p>
       </div>
+
       <div class="home-module-grid">
         <article class="home-module-card" aria-labelledby="basic-title">
+
           <div class="home-card-meta">
             <span class="home-eyebrow">Módulo 1</span>
             <span class="home-badge">Em breve</span>
           </div>
+
           <h3 id="basic-title">Básico</h3>
           <p>Entenda suas escolhas financeiras e aprenda a organizar o dinheiro com hábitos simples do cotidiano.</p>
           <ul class="home-topic-list">
-            <li>Necessidades, desejos e projetos</li>
+            <li>Escolhas financeiras, necessidades, desejos e projetos</li>
             <li>Orçamento pessoal, receitas e despesas</li>
-            <li>Consumo planejado e comparação de preços</li>
+            <li>Consumo planejado, comparação de preços e desperdício</li>
             <li>Poupança, metas e reserva para imprevistos</li>
           </ul>
           <p class="home-card-note">Os conteúdos e as atividades deste módulo ainda não estão disponíveis.</p>
         </article>
         <article class="home-module-card" aria-labelledby="intermediate-title">
+
           <div class="home-card-meta">
             <span class="home-eyebrow">Módulo 2</span>
             <span class="home-badge">Em breve</span>
           </div>
+
           <h3 id="intermediate-title">Intermediário</h3>
           <p>Aprofunde seus conhecimentos para compreender o crédito, os investimentos e os riscos financeiros.</p>
           <ul class="home-topic-list">
-            <li>Crédito, juros, cartão e Custo Efetivo Total</li>
-            <li>Endividamento e reorganização financeira</li>
-            <li>Investimentos: liquidez, risco e rentabilidade</li>
-            <li>Golpes, seguros e planejamento de futuro</li>
+            <li>Crédito, juros, cartão de crédito e Custo Efetivo Total</li>
+            <li>Endividamento, superendividamento e reorganização financeira</li>
+            <li>Investimentos, liquidez, risco e rentabilidade</li>
+            <li>Riscos financeiros, golpes, seguros e planejamento de futuro</li>
           </ul>
           <p class="home-card-note">Os conteúdos e as atividades deste módulo ainda não estão disponíveis.</p>
         </article>
