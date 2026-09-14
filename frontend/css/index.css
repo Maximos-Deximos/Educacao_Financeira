@@ -22,6 +22,10 @@
 .cabecalho a {
     color:inherit;
     text-decoration: none;
+
+/*Os botões pertecentes ao login podem ficar hardcodades nessa pagina*/
+/*é interessante centralizar as especificações dos botões no arquvos components/button.css*/
+
 }
 .Login1 {
     position: absolute;
