@@ -3,6 +3,7 @@
 import pytest
 from fastapi.testclient import TestClient
 
+# ignore os erros, pytest.ini conserta eles
 from app.database import get_db
 from app.main import app
 

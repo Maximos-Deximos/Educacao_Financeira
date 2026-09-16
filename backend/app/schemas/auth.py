@@ -20,3 +20,13 @@ class UserResponse(BaseModel):
     # Não devolve senha hash
     usuario_id: int
     usuario: str
+
+class UserLogin(BaseModel):
+    usuario: str
+    senha: str
+
+class Token(BaseModel):
+    # Roubado direto da documentação oficial
+    access_token: str
+    token_type: str = "bearer"
+    

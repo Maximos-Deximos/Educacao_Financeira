@@ -25,3 +25,27 @@ def criar_conta(db: Session, usuario: str, senha: str) -> Usuario:
     db.refresh(novo_usuario) # recarrego usuario_id gerado pelo banco
 
     return novo_usuario
+
+class CredenciaisInvalidasError(Exception):
+    pass
+
+def autenticar_usuario(db: Session, usuario: str, senha: str) -> Usuario:
+    usuario_db = db.query(Usuario).filter(Usuario.nome == usuario).first()
+    if not usuario_db:
+        raise CredenciaisInvalidasError()
+
+    try:
+        senha_ok = bcrypt.checkpw(
+            senha.encode("utf-8"), usuario_db.senha_hash.encode("utf-8")
+        )
+
+    except ValueError:
+        # Em caso de hashes incorretos
+        senha_ok = False
+
+    if not senha_ok:
+        raise CredenciaisInvalidasError()
+    return usuario_db
+
+# Os seeds de testes não vão funcionar por não serem hash
+# todo: Atualizar as senhas dos seeds testes

@@ -1,5 +1,6 @@
 from sqlalchemy import text
 
+# ignore os erros pytest.ini conserta eles
 from app.models.questoes import Questao
 from app.models.usuarios import Usuario
 from app.models.usuarios_questoes import UsuarioQuestao
