@@ -121,8 +121,46 @@ Crie um arquivo chamado .env, e adicione a senha de "POSTGRES_PASSWORD="
 
 Configure a conexão no DBeaver para trabalhar no banco de dados
 
-Configurações das .venv irão ser feitas Quando o banco de dados estiver pronto
+### Iniciar ambiene virtual python
+Criar ambiente virtual:
+```text
+python -m venv .venv/localização/do/projeto 
+```
+ou
+```text
+cd /lolcaização/do/projeto
+```
 
+```text
+python -m venv .venv
+```
+
+Entrar em ambiente virtual:
+
+Bash/zhs
+```text
+source .venv/bin/activate
+```
+Fish
+```text
+source .venv/bin/activate.fish
+```
+cmd.exe (Windows CMD)
+```text
+.venv\Scripts\activate.bat
+```
+Powershell
+```text
+.venv\Scripts\Activate.ps1
+```
+
+### Instalar Dependencias
+
+Dentro do ambiente virtual:
+
+```text
+pip install -r requirements.txt
+```
 
 ## Inicialize um servidor http para carregar componentes do frontend
 
@@ -146,10 +184,10 @@ Verifique se a instalação da imagem está correta com
 docker ps
 
 deve estar:
-
+```text
 CONTAINER ID   IMAGE         COMMAND                  CREATED          STATUS          PORTS                                         NAMES
 xxxxxxxxxxxx   postgres:18   "docker-entrypoint.s…"   10 seconds ago   Up 10 seconds   0.0.0.0:5050->5432/tcp, [::]:5050->5432/tcp   investimentes_db
-
+```
 ## Configure o DBeaver
 
 Crie uma nova conexão

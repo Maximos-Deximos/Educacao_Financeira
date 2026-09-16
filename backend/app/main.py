@@ -6,6 +6,9 @@ from app.database import engine, Base
 import app.models.usuarios
 import app.models.questoes
 import app.models.usuarios_questoes
+from app.routers import auth
+from app.routers import usuario
+
 # Routers serão implementados conforme forem adicionados
 
 # Criar tabelas que ainda não existem (preservando dados)
@@ -20,16 +23,15 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[*], # aceita qualquer origem, ajustar depois
+    allow_origins=["*"], # aceita qualquer origem, ajustar depois
     allow_credentials=True,
-    allow_methods=[*],
-    allow_headers=[*],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # todo
 # Inclui os routers quando existirem
-# app.include_router(auth.router, prefix="/auth", tags=["auth"])
-# app.include_router(user.router, prefix="/users", tags=["users"])
+app.include_router(auth.router, prefix="/auth", tags=["auth"])
 # app.include_router(form.router, prefix="/form", tags=["form"])
 
 @app.get("/health", tags=["health"])
