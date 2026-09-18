@@ -13,13 +13,26 @@ function limparToken() {
   localStorage.removeItem(CHAVE_TOKEN);
 }
 
-function estaAutenticado() {
-  return Boolean(getToken());
+function decodificarToken() {
+  const token = getToken();
+  if (!token) return null;
+  try {
+    const [, payload] = token.split('.');
+    return JSON.parse(atob(payload.replace(/-/g, '+').replace(/_/g, '/')));
+  } catch (erro) {
+    return null;
+  }
 }
 
-function logout() {
+function estaAutenticado() {
+  const dados = decodificarToken();
+  if (!dados || !dados.exp) return false;
+  return dados.exp * 1000 > Date.now();
+}
+
+function logout(destino = 'login.html') {
   limparToken();
-  window.location.href = "login.html";
+  window.location.href = destino;
 }
 
 // Comunicação com o endpoint de autenticação

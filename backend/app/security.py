@@ -12,13 +12,13 @@ from app.models.usuarios import Usuario
 
 SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret")
 ALGORITHM = "HS256"
-ACESS_TOKEN_EXPIRE_MINUTES = 60
+ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 30
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
 def criar_token_acesso(usuario_id: int) -> str:
     expiracao = datetime.now(timezone.utc) + timedelta(
-        minutes=ACESS_TOKEN_EXPIRE_MINUTES
+        minutes=ACCESS_TOKEN_EXPIRE_MINUTES
     )
     payload = {"sub": str(usuario_id), "exp": expiracao}
     return jwt.encode(payload, SECRET_KEY, algorithm=ALGORITHM)

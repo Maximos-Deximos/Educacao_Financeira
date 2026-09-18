@@ -24,5 +24,5 @@ carregarSaudacao();
 
 document.getElementById('botao-sair').addEventListener('click', function (evento) {
   evento.preventDefault();
-  logout();
+  logout('../index.html');
 });
