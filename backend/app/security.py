@@ -29,7 +29,7 @@ def get_usuario_atual(
 ) -> Usuario:
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        Usuario_id = int(payload["sub"])
+        usuario_id = int(payload["sub"])
     except(jwt.InvalidTokenError, KeyError, ValueError):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -43,4 +43,4 @@ def get_usuario_atual(
     return usuario
 
 # Tokens não será salvo no banco (token stateless)
-# No db é guardade somente o o sub (id)
+# No db é guardade somente o sub (id)
