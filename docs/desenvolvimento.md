@@ -174,6 +174,12 @@ http://localhost:[porta]
 
 - exemplo: http://localhost:6767
 
+Para testar a API um servidor uvicorn seve ser levantado no diretoŕio app/
+```text
+cd Educacao_Financeira/backend/app
+
+uvicorn app.main:app --reload --port 8888
+```
 
 ## inicie o container docker
 
