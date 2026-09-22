@@ -7,6 +7,7 @@
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 .conteudo1-1 {
@@ -23,7 +24,6 @@
     font-size: 18px;
     width: 600px;
     margin-top: 15px;
-    font-weight: bolder;
 }
 .btn2 {
     margin-top: 15px;
@@ -34,8 +34,6 @@
     height: 250px;
     margin: 20px;
 
-    border: 2px solid #ff6b35;
-    background-color: white;
     margin-right: 120px;
     display: flex;
     justify-content: center;
@@ -63,7 +61,7 @@
     height: 280px;
     margin: 20px;
 
-    border: 2px solid #ff6b35;
+    border: 2px solid #3A2A1E;
     background-color: white;
 
     margin-left: 40px;
@@ -80,7 +78,6 @@
 
     margin-right: 30px;
     text-align: center;
-    font-weight: bolder;
 }
 /*Terceira parte*/
 .conteudo3 {
@@ -94,23 +91,29 @@
     font-size: 20px;
     margin-bottom: 15px;
 }
-.conteudo3 p{
-    font-weight: lighter;
-}
 .part1, .part2, .part3 {
-    width: 300px;
+    background-color: white;
+    border: 1px solid #ff6b35;
+    border-top: 5px solid #ff6b35;
+    border-radius: 10px;
+    height: 230px;
+    width: 315px;
+    margin-bottom: 15px;
     text-align: center;
 }
-.ttl2, .ttl3{
-    margin-bottom: 15px;
+.ttl1, .ttl2, .ttl3{
+    margin-bottom: -10px;
 }
 .ttl1{
     width: 325px;
-    margin-bottom: 15px;
-    margin-left: 0;
+    padding-right: 10px;
+}
+.txt31, .txt32, .txt33{
+    margin-left: 7px;
+    width: 300px;
 }
 .icon1, .icon2, .icon3{
-    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 .info{
