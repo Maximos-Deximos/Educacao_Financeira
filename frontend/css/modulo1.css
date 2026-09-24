@@ -47,19 +47,30 @@ body {
 }
 
 .video {
-    height: 360px;
+    position: relative;
 
-    background:
-        radial-gradient(
-            circle at 75% 50%,
-            #42104d,
-            #0d0d0d 50%
-        );
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+
+    background: radial-gradient(circle at 75% 50%, #42104d, #0d0d0d 50%);
 
     color: white;
-
-    padding: 100px 55px;
 }
+
+.video iframe {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+
+    display: block;
+}
+
+
 
 .youtube {
     background-color: #ff0033;
@@ -365,4 +376,51 @@ body {
         font-size: 16px;
     }
 
+}
+
+/* Informações de modulo */
+
+.informacao-modulo {
+    padding: 28
+}
+
+.informacao-modulo h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.informacao-modulo p {
+    color: #727982;
+    font-size: 16;
+    line-height: 1,5;
+    margin-bottom: 12px;
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+    .conteudo {
+        max-width: 1200px;
+        padding: 40px 32px;
+    }
+    .video-card {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .video {
+        flex: 1.5;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .cards-grid .card {
+        margin-bottom: 0;
+    }
+    .informacao-modulo {
+        grid-column: 1 / -1;
+    }
 }
