@@ -171,7 +171,7 @@ _O que contém:_
 - senha e nome do aluno, e os conteudos academicos do site do site, e o progresso do aluno
 
 *Modelo relacional simplificado*
-
+text```
 ┌──────────────────┐
 │     usuarios     │
 ├──────────────────┤
@@ -202,12 +202,9 @@ _O que contém:_
 │ resposta_correta    │
 │ modulo              │
 └─────────────────────┘
+```
 
-
-_Mudanças relevantes:_
-- nenhuma mudança revelante
-
-**Api;**
+## Api
 
 _linguagens utilizadas:_
 - python (fastAPI)
@@ -222,40 +219,41 @@ _Mudanças relevantes:_
 - faltam terminar as configurações de roteadores
 
 **outras dependencias relacionadas:**
-
-alembic==1.19.1
-annotated-doc==0.0.5
-annotated-types==0.8.0
-anyio==4.14.2
-bcrypt==5.0.0
-certifi==2026.7.22
-click==8.5.0
-fastapi==0.141.1
-greenlet==3.5.5
-h11==0.16.0
-httpcore==1.0.9
-httptools==0.8.0
-httpx==0.28.1
-idna==3.19
-iniconfig==2.3.0
-Mako==1.4.1
-MarkupSafe==3.0.3
-packaging==26.3
-pluggy==1.6.0
-psycopg==3.3.5
-psycopg-binary==3.3.5
-pydantic==2.13.5
-pydantic_core==2.46.5
-Pygments==2.21.0
-PyJWT==2.13.0
-pytest==9.1.1
-python-dotenv==1.2.3
-PyYAML==6.0.3
-SQLAlchemy==2.0.52
-starlette==1.6.0
-typing-inspection==0.4.4
-typing_extensions==4.16.0
-uvicorn==0.52.4
-uvloop==0.22.1
-watchfiles==1.2.0
-websockets==17.1
+text```
+alembic
+annotated-doc
+annotated-types
+anyio
+bcrypt
+certifi
+click
+fastapi
+greenlet
+h11
+httpcore
+httptools
+httpx
+idna
+iniconfig
+Mako
+MarkupSafe
+packaging
+pluggy
+psycopg
+psycopg-binary
+pydantic
+pydantic_core
+Pygments
+PyJWT
+pytest
+python-dotenv
+PyYAML
+SQLAlchemy
+starlette
+typing-inspection
+typing_extensions
+uvicorn
+uvloop
+watchfiles
+websockets
+```
