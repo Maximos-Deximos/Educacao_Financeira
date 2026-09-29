@@ -119,7 +119,7 @@ atender aos requisitos funcionais e técnicos estabelecidos para a atividade.
 | Ricardo Araújo| 01901307  | Desenvolvedor |
 | Samuel Lucas  | 01914652  | Desenvolvedor |
 |Matheus Martins| 01931050  | Desenvolvedor |
-| Clara Beatriz | 019895358 | Desenvolvedor |
+| Clara Beatriz | 01895358  | Desenvolvedor |
 | Miguel Marques| 01898398  |   testador    |
 | Arthur Felipe | 01886375  |   testador    |
 ```
