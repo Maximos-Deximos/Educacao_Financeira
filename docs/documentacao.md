@@ -171,7 +171,7 @@ _O que contém:_
 - senha e nome do aluno, e os conteudos academicos do site do site, e o progresso do aluno
 
 *Modelo relacional simplificado*
-text```
+```text
 ┌──────────────────┐
 │     usuarios     │
 ├──────────────────┤
@@ -217,7 +217,7 @@ _O que contém:_
 
 TODO: justificar texto
 **outras dependencias relacionadas:**
-text```
+```text
 |   ferramenta      |    | explicação                                                                          |
 |----------------   |----|------------------------------------------------------------------------------------- 
 | alembic           |    | Sistema de migração de banco de dados
@@ -257,26 +257,3 @@ text```
 | watchfiles        |    | Detecta alterações nos arquivos para permitir o reload automático durante desenvolvimento
 | websockets        |    | Implementação do protocolo WebSocket para comunicação bidirecional
 ```
-
-TODO:
-Organização dos artefatos
-A pasta docs/ deverá concentrar os artefatos de documentação do projeto.
-
-criar pastas docs/branding/
-Deverá o branding (imagem da aplicação) encontradas em frontend/assets
-
-docs/mer/
-Deverá conter o Modelo Entidade-Relacionamento do sistema e seus respectivos artefatos.
-
-criar pasta docs/mockups/
-conter links do figma
-
-
-criar docs/models/uml/
-add diagrama ou .gitkeep
-
-docs/requirements/
-Deverá conter os requisitos funcionais, requisitos não funcionais, regras de negócio e demais documentos
-relacionados aos requisitos do sistema.
-A documentação deverá contemplar, conforme aplicável ao projeto, aspectos de segurança, disponibilidade,
-auditoria, desempenho, concorrência, LGPD e acessibilidade.
