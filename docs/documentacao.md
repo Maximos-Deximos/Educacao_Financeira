@@ -84,7 +84,7 @@ _Mudanças relevantes:_
 - centralização dos botões, teste de autentificação, estutura dos arquivos,
 
 **Modulos;**
-- feito por samuel
+- feito por Samuel
 
 *Módulo 1, Básico*
 
@@ -124,7 +124,7 @@ _Mudanças relevantes:_
 - restauração da pagina, estrutura da pagina
 
 *Forms;*
-- feito por matheus 
+- feito por Matheus 
 
 - onde vai fica as questões para o aluno responde. 
 
@@ -141,7 +141,7 @@ _Mudanças relevantes:_
 - Créditos ao Banco do Brasil pelos materiais disponibilizados para estudo e apoio ao desenvolvimento do projeto, incluindo documentos em PDF, materiais educacionais e vídeos. ( https://www.bcb.gov.br/cidadaniafinanceira/cidadania_biblioteca )
 
 **Configurações;**
-- feito por miguel
+- feito por Miguel (em desenvolvimento)
 
 _linguagens utilizadas:_
 -HTML
@@ -155,14 +155,14 @@ _Mudanças relevantes:_
 -O botão de alterar o tema do site iria deixar você escolher as cores porém não foi incluído na versão final
 
 # Backend:
-- feito por manoel
+- feito por Manoel
 
 -Utilizarmos docker, para hospedar o banco de dados, utilizamos o DBeaver como SGBD e ambientes python virtual para melhor gerenciamento das diversas dependencias.
 
 **Banco de dados;**
 
 _linguagens utilizadas:_
-- PostgreSQL
+- PostgreSQL (18)
 
 _objetivo:_
 - salva o progreço do aluno, e a conta usada pelo aluno.
@@ -215,45 +215,42 @@ _objetivo:_
 _O que contém:_
 - Quando o estudante concluir uma atividade, o JavaScript envia essa informação para a API. O Back End recebe a solicitação, verifica os dados, registra a conclusão no PostgreSQL, calcula o novo progresso e envia o resultado para o Front End. FastAPI foi escolhido por possuir estrutura simples, boa integração com Python e geração automática de documentação dos endpoints da API. Isso ajuda o grupo do Front End a entender quais informações precisa enviar e receber.
 
-_Mudanças relevantes:_
-- faltam terminar as configurações de roteadores
-
 **outras dependencias relacionadas:**
 text```
-alembic
-annotated-doc
-annotated-types
-anyio
-bcrypt
-certifi
-click
-fastapi
-greenlet
-h11
-httpcore
-httptools
-httpx
-idna
+alembic - Sistema de migração de banco de dados
+annotated-doc - Bliblioteca relacionada a utilização de typing.Annotated
+annotated-types - Fornece tipos/metadados utilizados pelo Pydantic
+anyio - Abstração para programalçao assincrona (dependência de fastAPI)
+bcrypt - Algoritimo de hashing de senhas
+certifi - Fornece certificados CA (Dependência httpx, não utilizado atualmente da aplicação)
+click - Biblioteca para criar interfaces de linha de comando (dependêndia de uvicorn)
+fastapi - Framework da API
+greenlet - dependência do SQLalchmey
+h11 - Implementação do protocolo HTTP/1.1 usada pelo ecossistema ASGI.
+httpcore - Camada de baixo nível utilizado pelo httpx
+httptools - Implementação rápida de parsing HTTP
+httpx - Cliente HTTP em python
+idna - Tratamento de namos de domínio internacionalizados
 iniconfig
-Mako
-MarkupSafe
-packaging
-pluggy
-psycopg
-psycopg-binary
-pydantic
-pydantic_core
-Pygments
-PyJWT
-pytest
-python-dotenv
-PyYAML
-SQLAlchemy
-starlette
-typing-inspection
-typing_extensions
-uvicorn
-uvloop
-watchfiles
-websockets
+Mako - Motor de templates usado pelo Alembic 
+MarkupSafe - Dependência usada pelo Mako para tratar texto que pode conter marcação HTML/XML
+packaging - Ferramenta para trabalhar com versões e metadados de pacotes Python
+pluggy - Sistema de plugins utilizado pelo pytest
+psycopg - Driver python para postgreSQL
+psycopg-binary - Facilita a instalação do psycopg
+pydantic - Validação e conversão de dados usando modelos Python
+pydantic_core - Parte de baixo nível do Pydantic responsável pela validação e serialização dos dados
+Pygments - Destaca o codigo com cores
+PyJWT - Criação e validação de tokens JWT
+pytest - Frameword de testes python
+python-dotenv - Carrega variaveis de ambientes .env
+PyYAML - Leitura e escrita de arquivos YAML
+SQLAlchemy - Nossa ORM
+starlette - Framework ASGI sobre o qual o FastAPI é construído, middleware
+typing-inspection - Auxilia blibliotecas a inspecionar informações
+typing_extensions - Disponibilza recursos de tipagem Python
+uvicorn - Servidor ASGI usado para executar a API (investimentes_API)
+uvloop - Usado pelo uvicorn
+watchfiles - Detecta alterações nos arquivos para permitir o reload automático durante desenvolvimento
+websockets - Implementação do protocolo WebSocket para comunicação bidirecional
 ```
