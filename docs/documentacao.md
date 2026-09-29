@@ -215,42 +215,68 @@ _objetivo:_
 _O que contém:_
 - Quando o estudante concluir uma atividade, o JavaScript envia essa informação para a API. O Back End recebe a solicitação, verifica os dados, registra a conclusão no PostgreSQL, calcula o novo progresso e envia o resultado para o Front End. FastAPI foi escolhido por possuir estrutura simples, boa integração com Python e geração automática de documentação dos endpoints da API. Isso ajuda o grupo do Front End a entender quais informações precisa enviar e receber.
 
+TODO: justificar texto
 **outras dependencias relacionadas:**
 text```
-alembic - Sistema de migração de banco de dados
-annotated-doc - Bliblioteca relacionada a utilização de typing.Annotated
-annotated-types - Fornece tipos/metadados utilizados pelo Pydantic
-anyio - Abstração para programalçao assincrona (dependência de fastAPI)
-bcrypt - Algoritimo de hashing de senhas
-certifi - Fornece certificados CA (Dependência httpx, não utilizado atualmente da aplicação)
-click - Biblioteca para criar interfaces de linha de comando (dependêndia de uvicorn)
-fastapi - Framework da API
-greenlet - dependência do SQLalchmey
-h11 - Implementação do protocolo HTTP/1.1 usada pelo ecossistema ASGI.
-httpcore - Camada de baixo nível utilizado pelo httpx
-httptools - Implementação rápida de parsing HTTP
-httpx - Cliente HTTP em python
-idna - Tratamento de namos de domínio internacionalizados
-iniconfig
-Mako - Motor de templates usado pelo Alembic 
-MarkupSafe - Dependência usada pelo Mako para tratar texto que pode conter marcação HTML/XML
-packaging - Ferramenta para trabalhar com versões e metadados de pacotes Python
-pluggy - Sistema de plugins utilizado pelo pytest
-psycopg - Driver python para postgreSQL
-psycopg-binary - Facilita a instalação do psycopg
-pydantic - Validação e conversão de dados usando modelos Python
-pydantic_core - Parte de baixo nível do Pydantic responsável pela validação e serialização dos dados
-Pygments - Destaca o codigo com cores
-PyJWT - Criação e validação de tokens JWT
-pytest - Frameword de testes python
-python-dotenv - Carrega variaveis de ambientes .env
-PyYAML - Leitura e escrita de arquivos YAML
-SQLAlchemy - Nossa ORM
-starlette - Framework ASGI sobre o qual o FastAPI é construído, middleware
-typing-inspection - Auxilia blibliotecas a inspecionar informações
-typing_extensions - Disponibilza recursos de tipagem Python
-uvicorn - Servidor ASGI usado para executar a API (investimentes_API)
-uvloop - Usado pelo uvicorn
-watchfiles - Detecta alterações nos arquivos para permitir o reload automático durante desenvolvimento
-websockets - Implementação do protocolo WebSocket para comunicação bidirecional
+|   ferramenta      |    | explicação                                                                          |
+|----------------   |----|------------------------------------------------------------------------------------- 
+| alembic           |    | Sistema de migração de banco de dados
+| annotated-doc     |    | Bliblioteca relacionada a utilização de typing.Annotated
+| annotated-types   |    | Fornece tipos/metadados utilizados pelo Pydantic
+| anyio             |    | Abstração para programalçao assincrona (dependência de fastAPI)
+| bcrypt            |    | Algoritimo de hashing de senhas
+| certifi           |    | Fornece certificados CA (Dependência httpx, não utilizado atualmente da aplicação)
+| click             |    | Biblioteca para criar interfaces de linha de comando (dependêndia de uvicorn)
+| fastapi           |    | Framework da API
+| greenlet          |    | dependência do SQLalchmey
+| h11               |    | Implementação do protocolo HTTP/1.1 usada pelo ecossistema ASGI.
+| httpcore          |    | Camada de baixo nível utilizado pelo httpx
+| httptools         |    | Implementação rápida de parsing HTTP
+| httpx             |    | Cliente HTTP em python
+| idna              |    | Tratamento de namos de domínio internacionalizados
+| iniconfig         |    | Ler arquivos ini
+| Mako              |    | Motor de templates usado pelo Alembic 
+| MarkupSafe        |    | Dependência usada pelo Mako para tratar texto que pode conter marcação HTML/XML
+| packaging         |    | Ferramenta para trabalhar com versões e metadados de pacotes Python
+| pluggy            |    | Sistema de plugins utilizado pelo pytest
+| psycopg           |    | Driver python para postgreSQL
+| psycopg-binary    |    | Facilita a instalação do psycopg
+| pydantic          |    | Validação e conversão de dados usando modelos Python
+| pydantic_core     |    | Parte de baixo nível do Pydantic responsável pela validação e serialização dos dados
+| Pygments          |    | Destaca o codigo com cores
+| PyJWT             |    | Criação e validação de tokens JWT
+| pytest            |    | Frameword de testes python
+| python-dotenv     |    | Carrega variaveis de ambientes .env
+| PyYAML            |    | Leitura e escrita de arquivos YAML
+| SQLAlchemy        |    |Nossa ORM
+| starlette         |    |Framework ASGI sobre o qual o FastAPI é construído, middleware
+| typing-inspection |    |Auxilia blibliotecas a inspecionar informações
+| typing_extensions |    |Disponibilza recursos de tipagem Python
+| uvicorn           |    | Servidor ASGI usado para executar a API (investimentes_API)
+| uvloop            |    | Usado pelo uvicorn
+| watchfiles        |    | Detecta alterações nos arquivos para permitir o reload automático durante desenvolvimento
+| websockets        |    | Implementação do protocolo WebSocket para comunicação bidirecional
 ```
+
+TODO:
+Organização dos artefatos
+A pasta docs/ deverá concentrar os artefatos de documentação do projeto.
+
+criar pastas docs/branding/
+Deverá o branding (imagem da aplicação) encontradas em frontend/assets
+
+docs/mer/
+Deverá conter o Modelo Entidade-Relacionamento do sistema e seus respectivos artefatos.
+
+criar pasta docs/mockups/
+conter links do figma
+
+
+criar docs/models/uml/
+add diagrama ou .gitkeep
+
+docs/requirements/
+Deverá conter os requisitos funcionais, requisitos não funcionais, regras de negócio e demais documentos
+relacionados aos requisitos do sistema.
+A documentação deverá contemplar, conforme aplicável ao projeto, aspectos de segurança, disponibilidade,
+auditoria, desempenho, concorrência, LGPD e acessibilidade.
