@@ -1,21 +1,3 @@
-## Membros 
-
-```text
-| Nome          | Matrícula | Papel         |
-|---------------|-----------|---------------|
-|Manoel Henrique| 01883036  | Scrum Master  |
-| Ana Gabriela  | 01888284  | Documentador  |
-| marcos antonio| 01904977  | Documentador  |
-| Carlos Eduardo| 01895375  | Documentador  |
-| Ricardo Araújo| 01901307  | Desenvolvedor |
-| Samuel Lucas  | 01914652  | Desenvolvedor |
-|Matheus Martins| 01931050  | Desenvolvedor |
-| Clara Beatriz |           | Desenvolvedor |
-| Miguel Marques| 01898398  |   testador    |
-| Arthur Felipe | 01886375  |   testador    |
-```
-
-
 ## Documentação
 
 # Slides:

@@ -95,6 +95,31 @@ python3 -m http.server 6767
 
 ## A aplicação web está pronta para ser utilizada
 
+### Contexto acadêmico
 
+Este projeto está sendo desenvolvido no contexto de uma atividade acadêmica
+proporcionada pela Uninassau Olinda.
 
+O presente repositório já existia anteriormente ao início da atividade e
+está sendo utilizado como base para o desenvolvimento da aplicação web
+solicitada pela instituição.
 
+Durante o desenvolvimento, o projeto está sendo adaptado e expandido para
+atender aos requisitos funcionais e técnicos estabelecidos para a atividade.
+
+## Membros 
+
+```text
+| Nome          | Matrícula | Papel         |
+|---------------|-----------|---------------|
+|Manoel Henrique| 01883036  | Scrum Master  |
+| Ana Gabriela  | 01888284  | Documentador  |
+| marcos antonio| 01904977  | Documentador  |
+| Carlos Eduardo| 01895375  | Documentador  |
+| Ricardo Araújo| 01901307  | Desenvolvedor |
+| Samuel Lucas  | 01914652  | Desenvolvedor |
+|Matheus Martins| 01931050  | Desenvolvedor |
+| Clara Beatriz | adicionar | Desenvolvedor |
+| Miguel Marques| 01898398  |   testador    |
+| Arthur Felipe | 01886375  |   testador    |
+```
