@@ -22,7 +22,7 @@ Veja desenvolvimento.md
 
 - docker
 - python3
-- Dbeaver ou outro editor de banco de dados
+- Dbeaver
 
 ## Instalação
 
