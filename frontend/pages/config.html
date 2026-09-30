@@ -1,67 +1,333 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel ="icon" href="../assets/icons/logo_invest.ico">
+    <title>Configurações | InvestiMentes</title>
+
+    <link rel="icon" href="../assets/icons/logo_invest.ico">
+
+    <!-- CSS GERAL DO PROJETO -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+
+    <!-- HEADER E FOOTER OFICIAIS -->
     <link rel="stylesheet" href="../css/layout/header.css">
     <link rel="stylesheet" href="../css/layout/footer.css">
-    <link rel="stylesheet" href="../css/components/button.css">
-    <link rel="stylesheet" href="../css/variables.css">
+
+    <!-- CSS ESPECÍFICO DA CONFIGURAÇÃO -->
     <link rel="stylesheet" href="../css/config.css">
-    
-    <title>Investimentes - Configuração</title>
 </head>
-    <body class="config-page">
-        <a class="home-skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+<body class="config-page">
+
+    <!-- CABEÇALHO -->
+
     <header class="cabecalho">
-        <a class="cabecalho-brand" href="../index.html" aria-label="InvestiMentes — portal inicial">InvestiMentes</a>
-    <div class="cabecalho-acoes">
-      <a href="../index.html" class="btn btn--contorno">Sair</a>
-    </div>
-    </header>
-<main id="conteudo" class="config-container config-main" tabindex="-1">
-    
-    <section class="config-intro" aria-labelly="config-title"></section>
-        <p class="config-tela">[nome_conta]</p>
-        <h1 id="config-title">Configurações</h1>
-        <p>TODO: add detalhes pagina config</p>
-    </section>
 
-    <section class="config-secao" aria-labelledby="perfil-title">
-        <div class="config-card">
-            <h2 id="perfil-tittle"></h2>
+        <a
+            class="cabecalho-brand"
+            href="../index.html"
+            aria-label="InvestiMentes — portal inicial"
+        >
+            InvestiMentes
+        </a>
+
+        <div class="cabecalho-acoes">
+
+            <a
+                href="../index.html"
+                class="config-sair"
+            >
+                Sair
+            </a>
+
         </div>
-    
-    
-    
-    
-    </section>
-<h1>Configurações</h1>
-  
-    <div class="saudacao">
-        <p>Olá [nome]</p>
 
-        
+    </header>
+
+
+    <!-- ACESSIBILIDADE -->
+
+    <div class="acessibilidade-container">
+
+        <a
+            class="home-skip-link"
+            href="#conteudo"
+        >
+            Ir para o conteúdo
+        </a>
+
     </div>
 
-  <div class="tela-config">
-     <button id="alt-senha" >Alterar senha</button>
-     <button id="mudar-conta">Mudar conta</button>
-     <button onclick="cor()" id="cor">Mudar tema</button>
-</div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main
+        id="conteudo"
+        class="config-main"
+        tabindex="-1"
+    >
+
+        <section
+            class="config-card"
+            aria-labelledby="config-title"
+        >
+
+            <!-- TÍTULO -->
+
+            <div class="config-cabecalho">
+
+                <h1 id="config-title">
+                    Configurações
+                </h1>
+
+                <p class="config-saudacao">
+                    Olá,
+                    <span id="nome-saudacao">usuário</span>!
+                </p>
+
+            </div>
 
 
+            <!-- ALTERAR NOME -->
 
-</main>
+            <section class="config-secao">
+
+                <h2>
+                    Nome de usuário
+                </h2>
+
+                <p class="config-descricao">
+                    Altere o nome que será exibido na sua conta.
+                </p>
+
+                <form
+                    id="form-nome"
+                    class="config-form"
+                >
+
+                    <div class="campo">
+
+                        <label for="nome-usuario">
+                            Nome de usuário
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome-usuario"
+                            name="nome"
+                            placeholder="Digite seu nome"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="config-botao"
+                    >
+                        Alterar nome
+                    </button>
+
+                    <p
+                        id="nome-feedback"
+                        class="feedback"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </section>
+
+
+            <!-- ALTERAR SENHA -->
+
+            <section class="config-secao">
+
+                <h2>
+                    Alterar senha
+                </h2>
+
+                <p class="config-descricao">
+                    Atualize a senha da sua conta.
+                </p>
+
+                <form
+                    id="form-senha"
+                    class="config-form"
+                >
+
+                    <div class="campo">
+
+                        <label for="senha-atual">
+                            Senha atual
+                        </label>
+
+                        <div class="campo-senha">
+
+                            <input
+                                type="password"
+                                id="senha-atual"
+                                name="senha-atual"
+                                autocomplete="current-password"
+                                maxlength="15"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="botao-visualizar-senha"
+                                data-target="senha-atual"
+                                aria-label="Mostrar senha"
+                                aria-pressed="false"
+                            >
+                                👁
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="nova-senha">
+                            Nova senha
+                        </label>
+
+                        <div class="campo-senha">
+
+                            <input
+                                type="password"
+                                id="nova-senha"
+                                name="nova-senha"
+                                autocomplete="new-password"
+                                maxlength="15"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="botao-visualizar-senha"
+                                data-target="nova-senha"
+                                aria-label="Mostrar senha"
+                                aria-pressed="false"
+                            >
+                                👁
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="confirmar-senha">
+                            Confirmar nova senha
+                        </label>
+
+                        <div class="campo-senha">
+
+                            <input
+                                type="password"
+                                id="confirmar-senha"
+                                name="confirmar-senha"
+                                autocomplete="new-password"
+                                maxlength="15"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="botao-visualizar-senha"
+                                data-target="confirmar-senha"
+                                aria-label="Mostrar senha"
+                                aria-pressed="false"
+                            >
+                                👁
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="config-botao"
+                    >
+                        Alterar senha
+                    </button>
+
+                    <p
+                        id="senha-feedback"
+                        class="feedback"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </section>
+
+
+            <!-- TEMA -->
+
+            <section class="config-secao">
+
+                <h2>
+                    Tema
+                </h2>
+
+                <p class="config-descricao">
+                    Escolha a aparência da página.
+                </p>
+
+                <div
+                    class="tema-opcoes"
+                    aria-label="Opções de tema"
+                >
+
+                    <button
+                        type="button"
+                        id="tema-claro"
+                        class="tema-botao"
+                    >
+                        Tema claro
+                    </button>
+
+                    <button
+                        type="button"
+                        id="tema-escuro"
+                        class="tema-botao"
+                    >
+                        Tema escuro
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ OFICIAL DO PROJETO -->
+
     <div id="footer"></div>
+
+
+    <!-- SCRIPTS -->
+
     <script src="../js/components/footer.js"></script>
     <script src="../js/pages/config.js"></script>
+
 </body>
 
 </html>
