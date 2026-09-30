@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Atividade — Módulo Intermediário | InvestiMentes</title>
+
+  <link rel="icon" href="../assets/icons/logo_invest.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout/header.css">
+  <link rel="stylesheet" href="../css/layout/footer.css">
+  <link rel="stylesheet" href="../css/components/button.css">
+  <link rel="stylesheet" href="../css/atividades.css">
+
+  <script src="../js/data/questoes.js" defer></script>
+  <script src="../js/pages/atividades.js" defer></script>
+
+</head>
+
+<body data-modulo="2">
+  <a class="pular-conteudo" href="#conteudo">Ir para as questões</a>
+
+  <header class="cabecalho">
+    <a class="cabecalho-brand" href="../index.html">InvestiMentes</a>
+    <a class="btn btn--contorno" href="modulo2.html">Voltar ao módulo</a>
+  </header>
+
+  <main id="conteudo" class="atividades-container">
+
+    <section class="atividade-intro" aria-labelledby="titulo">
+      <p class="atividade-etiqueta">Módulo 2 · Intermediário</p>
+
+      <h1 id="titulo">Hora de praticar</h1>
+
+      <p>Leia cada questão, digite a letra da alternativa e clique em Confirmar.
+      Nas questões que pedem um valor, você também pode digitar o resultado do cálculo.</p>
+
+      <p>Você pode tentar novamente se errar. As respostas desta atividade não são salvas ao sair ou atualizar a página.</p>
+
+      <div class="atividade-resumo" role="status" aria-live="polite" aria-atomic="true">
+        <p id="progresso-texto">0 de 16 questões confirmadas · 0 acertos</p>
+        <progress id="progresso" max="16" value="0" aria-label="Questões confirmadas"></progress>
+        <p id="resultado-final"></p>
+      </div>
+    </section>
+
+    <noscript>Ative o JavaScript no navegador para responder às questões.</noscript>
+
+    <div id="questoes"></div>
+
+    <a class="btn btn--contorno atividade-voltar" href="modulo2.html">Voltar ao módulo</a>
+  </main>
+
+  <div id="footer"></div>
+  <script src="../js/components/footer.js"></script>
+
+</body>
+
+</html>
