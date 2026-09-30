@@ -6,7 +6,25 @@
     background-color: rgb(253, 252, 252); 
     cursor: pointer; 
     position: absolute;
-    
+    color: rgb(0, 0, 0);
+    }
+#mudar-conta{
+    border: 2px;
+    border-style: outset;
+    border-color: rgb(255, 120, 67);
+    border-style: outset;
+    background-color: rgb(253, 252, 252); 
+    cursor: pointer; 
+    color: rgb(0, 0, 0);
+    }   
+#alt-senha{
+    border: 2px;
+    border-style: outset;
+    border-color: rgb(255, 120, 67);
+    border-style: outset;
+    background-color: rgb(253, 252, 252); 
+    cursor: pointer; 
+    color: rgb(0, 0, 0);
     }
 button{
     border: 2px;
@@ -14,8 +32,9 @@ button{
     border-style: outset;
     background-color: rgb(253, 252, 252); 
     cursor: pointer; 
-    
-}   
+    color: rgb(0, 0, 0);
+    }
+   
 
 #cor :hover{
 background-color: rgb(247, 161, 3);
