@@ -34,7 +34,10 @@ cd /local-de-clonagem/InvestiMentes
 
 ### 2. Configurar o banco de dados
 
-TODO: exibir senha de .env?
+Na raiz do projeto:
+- Crair arquivo .env e popular ele com o .env.example
+- Adicioanr a senha do banco de dados
+- Adicionar chave JWT de autenticação
 
 Na raiz do projeto execute:
 ```text
