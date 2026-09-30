@@ -1,0 +1,426 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f1;
+    color: #29313d;
+}
+
+
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 24px;
+}
+
+
+/* =========================
+   VÍDEO
+========================= */
+
+.video-card {
+    background-color: white;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    margin-bottom: 28px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.video {
+    position: relative;
+
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+
+    background: radial-gradient(circle at 75% 50%, #42104d, #0d0d0d 50%);
+
+    color: white;
+}
+
+.video iframe {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+
+    display: block;
+}
+
+
+
+.youtube {
+    background-color: #ff0033;
+
+    width: 55px;
+    height: 34px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+.video h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.video p {
+    color: #c4c4c4;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   DESCRIÇÃO
+========================= */
+
+.descricao {
+    padding: 30px;
+}
+
+.descricao h2 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.descricao p {
+    color: #727982;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background-color: white;
+
+    border-radius: 28px;
+
+    margin-bottom: 24px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   LEITURA
+========================= */
+
+.leitura {
+    padding: 30px;
+}
+
+.titulo-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.titulo-card span {
+    color: #ed5b2a;
+
+    font-size: 25px;
+}
+
+.titulo-card h2 {
+    font-size: 19px;
+}
+
+
+.livro {
+    display: flex;
+
+    gap: 24px;
+
+    align-items: center;
+}
+
+.capa {
+    width: 95px;
+    height: 130px;
+
+    flex-shrink: 0;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        145deg,
+        #f05a22,
+        #dc4d19
+    );
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 38px;
+}
+
+.informacoes h3 {
+    font-size: 17px;
+
+    line-height: 1.3;
+
+    margin-bottom: 8px;
+}
+
+.informacoes p {
+    color: #999;
+
+    margin-bottom: 5px;
+}
+
+.informacoes strong {
+    display: block;
+
+    color: #ed5b2a;
+
+    margin-bottom: 15px;
+}
+
+.informacoes a {
+    color: #ed5b2a;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   ATIVIDADE E COMPLEMENTAR
+========================= */
+
+.atividade,
+.complementar {
+    min-height: 95px;
+
+    padding: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+}
+
+.icone {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 17px;
+
+    background-color: #f8a9a0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    flex-shrink: 0;
+}
+
+.atividade-icone {
+    background-color: #fff0d2;
+
+    color: #ed5b2a;
+}
+
+.texto-card {
+    flex: 1;
+}
+
+.texto-card h2 {
+    font-size: 18px;
+
+    margin-bottom: 4px;
+}
+
+.texto-card p {
+    color: #999;
+
+    font-size: 15px;
+}
+
+.seta {
+    font-size: 25px;
+
+    color: #aaa;
+}
+
+
+/* =========================
+   CARD LARANJA
+========================= */
+
+.complementar {
+    background-color: #f15b28;
+
+    color: white;
+}
+
+.complementar .icone {
+    background-color: rgba(255,255,255,0.20);
+
+    color: white;
+}
+
+.complementar .texto-card p {
+    color: #ffe0d4;
+}
+
+.complementar .seta {
+    color: white;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .topo {
+        height: 95px;
+
+        padding: 0 20px;
+    }
+
+    .topo h1 {
+        font-size: 19px;
+    }
+
+    .conteudo {
+        padding: 22px;
+
+        padding-bottom: 110px;
+    }
+
+    .video {
+        height: 360px;
+
+        padding: 90px 45px;
+    }
+
+    .descricao {
+        padding: 25px;
+    }
+
+    .descricao h2 {
+        font-size: 19px;
+    }
+
+    .descricao p {
+        font-size: 17px;
+    }
+
+    .leitura {
+        padding: 25px;
+    }
+
+    .livro {
+        gap: 18px;
+    }
+
+    .capa {
+        width: 92px;
+        height: 125px;
+    }
+
+    .informacoes h3 {
+        font-size: 16px;
+    }
+
+}
+
+/* Informações de modulo */
+
+.informacao-modulo {
+    padding: 28
+}
+
+.informacao-modulo h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.informacao-modulo p {
+    color: #727982;
+    font-size: 16;
+    line-height: 1,5;
+    margin-bottom: 12px;
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+    .conteudo {
+        max-width: 1200px;
+        padding: 40px 32px;
+    }
+    .video-card {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .video {
+        flex: 1.5;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .cards-grid .card {
+        margin-bottom: 0;
+    }
+    .informacao-modulo {
+        grid-column: 1 / -1;
+    }
+}

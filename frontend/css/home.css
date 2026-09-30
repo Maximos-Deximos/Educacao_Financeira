@@ -1,0 +1,131 @@
+/* Estilos restritos à Home, preservando os componentes compartilhados. */
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--texto-escuro);
+}
+
+.home-page .home-container {
+  width: min(100% - 48px, 1120px);
+  margin-inline: auto;
+}
+
+.home-page a { color: inherit; text-underline-offset: 5px; }
+.home-page a:focus-visible,
+.home-page .home-main:focus-visible {
+  outline: 3px solid var(--texto-escuro);
+  outline-offset: 5px;
+  border-radius: 4px;
+}
+
+.home-page .home-skip-link {
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  z-index: 1;
+  padding: 12px 16px;
+  background: var(--creme);
+  transform: translateY(-200%);
+}
+.home-page .home-skip-link:focus { transform: translateY(0); }
+
+.home-page .home-main { flex: 1; padding-block: 56px; line-height: 1.6; }
+.home-page .home-intro { max-width: 700px; margin-bottom: 44px; }
+.home-page .home-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.home-page h1,
+.home-page h2,
+.home-page h3 { line-height: 1.2; overflow-wrap: anywhere; }
+.home-page h1 { font-size: clamp(2rem, 5vw, 3rem); margin-block: 10px 16px; }
+.home-page h2 { font-size: 1.5rem; }
+.home-page h3 { font-size: 1.75rem; margin-bottom: 14px; }
+.home-page .home-intro > p:last-child { font-size: 1.125rem; }
+.home-page .home-section-heading { margin-bottom: 24px; }
+.home-page .home-section-heading p { margin-top: 8px; }
+.home-page .home-module-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.home-page .home-module-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid var(--pessego);
+  border-top: 5px solid var(--laranja);
+  border-radius: 14px;
+}
+.home-page .home-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.home-page .home-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: var(--creme);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.home-page .home-topic-list { padding-left: 20px; margin-block: 24px; }
+.home-page .home-topic-list li + li { margin-top: 10px; }
+.home-page .home-card-note {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid var(--pessego);
+  font-size: 0.875rem;
+}
+.home-page .home-progress {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 28px;
+  margin-top: 32px;
+  padding: 30px;
+  border-radius: 14px;
+  background: var(--pessego);
+}
+.home-page .home-progress h2 { margin-top: 10px; }
+.home-page .home-progress-message p + p { margin-top: 8px; }
+/* O rodapé herda a fonte global e usa somente layout/footer.css.
+   A altura de linha 1.6 fica no conteúdo principal, não no componente. */
+
+@media (max-width: 720px) {
+  .home-page .home-container { width: calc(100% - 32px); }
+  .home-page .home-main { padding-block: 32px; }
+  .home-page .home-intro { margin-bottom: 32px; }
+  .home-page .home-module-grid,
+  .home-page .home-progress { grid-template-columns: 1fr; }
+  .home-page .home-module-card,
+  .home-page .home-progress { padding: 24px; }
+}
+
+/* O portal não adapta o cabeçalho estreito. Na Home, evita sobreposição
+   mantendo as dimensões do controle e os 20px de espaçamento externo. */
+@media (max-width: 480px) {
+  .home-page .cabecalho {
+    height: auto;
+    min-height: 100px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .home-page .cabecalho-brand {
+    font-size: clamp(24px, 7vw, 44px);
+    margin-bottom: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .home-page .cabecalho-acoes {
+    position: static;
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+}
