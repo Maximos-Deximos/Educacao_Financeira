@@ -35,8 +35,8 @@ cd /local-de-clonagem/InvestiMentes
 ### 2. Configurar o banco de dados
 
 Na raiz do projeto:
-- Crair arquivo .env e popular ele com o .env.example
-- Adicioanr a senha do banco de dados (POSTGRES_PASSWORD)
+- Criar arquivo .env e popular ele com o .env.example
+- Adicionar a senha do banco de dados (POSTGRES_PASSWORD)
 - Adicionar senha de autenticação JWT (SECRET_KEY)
 
 Na raiz do projeto execute:
