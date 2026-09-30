@@ -1,60 +1,41 @@
-
-/* =========================================
+/* 
    PÁGINA DE CONFIGURAÇÕES
-   ========================================= */
-
+   */
 .config-page {
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
-
     background-color: var(--fundo);
     color: var(--texto-escuro);
-
     transition:
         background-color 0.2s ease,
         color 0.2s ease;
 }
-
-
-/* =========================================
+/* 
    BOTÃO "SAIR"
-   ========================================= */
-
+    */
 .config-sair {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     min-height: 40px;
-
     padding: 8px 18px;
-
     background-color: var(--superfice);
     color: var(--laranja);
-
     border: 2px solid var(--superfice);
     border-radius: 7px;
-
     font-weight: 700;
     text-decoration: none;
-
     cursor: pointer;
 }
-
 .config-sair:hover {
     background-color: var(--pessego);
     color: var(--texto-escuro);
-
     border-color: var(--pessego);
 }
-
-
-/* =========================================
+/* 
    BOTÃO "IR PARA O CONTEÚDO"
-   ========================================= */
-
+    */
 .acessibilidade-container {
    width: 100%;
     margin: 0;
@@ -63,7 +44,6 @@
     justify-content: flex-start;
     box-sizing: border-box;
 }
-
 .home-skip-link {
     display: inline-flex;
     align-items: center;
@@ -81,346 +61,215 @@
         color 0.2s ease,
         border-color 0.2s ease;
 }
-
 .home-skip-link:hover {
     background-color: var(--pessego);
     color: var(--texto-escuro);
-
     border-color: var(--pessego);
 }
-
 .home-skip-link:focus {
     outline: 3px solid var(--pessego);
     outline-offset: 2px;
 }
-
-
-/* =========================================
+/* 
    CONTEÚDO PRINCIPAL
-   ========================================= */
-
+    */
 .config-main {
     width: min(100% - 40px, 1000px);
-
     margin: 0 auto;
     padding: 35px 0 50px;
-
     flex: 1;
 }
-
-
-/* =========================================
+/* 
    CARD PRINCIPAL
-   ========================================= */
-
+    */
 .config-card {
     width: 100%;
-
     padding: 30px;
-
     background-color: var(--superfice);
-
     border: 1px solid var(--borda);
     border-radius: 10px;
-
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
-
     box-sizing: border-box;
-
     transition:
         background-color 0.2s ease,
         border-color 0.2s ease,
         box-shadow 0.2s ease;
 }
-
-
-/* =========================================
+/* 
    CABEÇALHO DA CONFIGURAÇÃO
-   ========================================= */
-
+    */
 .config-cabecalho {
     margin-bottom: 25px;
 }
-
 .config-cabecalho h1 {
     margin: 0 0 8px;
-
     color: var(--laranja);
-
     font-size: 2rem;
 }
-
 .config-saudacao {
     margin: 0;
-
     color: var(--texto-suave);
-
     line-height: 1.5;
 }
-
-
-/* =========================================
+/* 
    SEÇÕES
-   ========================================= */
-
+    */
 .config-secao {
     padding: 25px 0;
-
     border-top: 1px solid var(--borda);
 }
-
 .config-secao:first-of-type {
     border-top: none;
 }
-
 .config-secao h2 {
     margin: 0 0 8px;
-
     color: var(--laranja);
-
     font-size: 1.3rem;
 }
-
 .config-descricao {
     margin: 0 0 20px;
-
     color: var(--texto-suave);
-
     line-height: 1.5;
 }
-
-
-/* =========================================
+/* 
    FORMULÁRIOS
-   ========================================= */
+    */
 
 .config-form {
     display: flex;
     flex-direction: column;
-
     gap: 15px;
 }
-
 .campo {
     display: flex;
     flex-direction: column;
-
     gap: 6px;
 }
-
 .campo label {
     font-weight: 700;
 }
-
 .campo input {
     width: 100%;
-
     padding: 10px 12px;
-
     background-color: var(--superfice);
     color: var(--texto-escuro);
-
     border: 2px solid var(--borda);
     border-radius: 6px;
-
     box-sizing: border-box;
-
     transition:
         background-color 0.2s ease,
         color 0.2s ease,
         border-color 0.2s ease;
 }
-
 .campo input:focus {
     outline: none;
-
     border-color: var(--laranja);
 }
-
 .campo input::placeholder {
     color: var(--texto-suave);
 }
-
-
-/* =========================================
-   CAMPOS DE SENHA
-   ========================================= */
-
 .campo-senha {
     position: relative;
-
     width: 100%;
 }
-
 .campo-senha input {
     padding-right: 48px;
 }
-
 .botao-visualizar-senha {
     position: absolute;
-
     top: 50%;
     right: 10px;
-
     width: 30px;
     height: 30px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 0;
-
     transform: translateY(-50%);
-
     background-color: transparent;
     color: var(--texto-suave);
-
     border: none;
     border-radius: 5px;
-
     font-size: 1.1rem;
-
     cursor: pointer;
 }
-
 .botao-visualizar-senha:hover {
     background-color: var(--pessego);
     color: var(--texto-escuro);
 }
-
 .botao-visualizar-senha:focus {
     outline: 2px solid var(--laranja);
     outline-offset: 1px;
 }
-
-
-/* =========================================
-   BOTÕES DE CONFIGURAÇÃO
-   ========================================= */
-
 .config-botao {
     align-self: flex-start;
-
     padding: 10px 20px;
-
     background-color: var(--laranja);
     color: var(--texto-invertido);
-
     border: 2px solid var(--laranja);
     border-radius: 7px;
-
     font-weight: 700;
-
     cursor: pointer;
 }
-
 .config-botao:hover {
     background-color: var(--pessego);
     color: var(--texto-escuro);
 
     border-color: var(--pessego);
 }
-
-
-/* =========================================
-   MENSAGENS DE FEEDBACK
-   ========================================= */
-
 .feedback {
     min-height: 18px;
-
     margin: 0;
-
     font-size: 0.9rem;
     font-weight: 700;
 }
-
 .feedback.sucesso {
     color: var(--sucesso);
 }
-
 .feedback.erro {
     color: var(--erro);
 }
-
-
-/* =========================================
-   TEMA
-   ========================================= */
-
 .tema-opcoes {
     display: flex;
-
     gap: 12px;
-
     flex-wrap: wrap;
 }
-
 .tema-botao {
     padding: 10px 20px;
-
     background-color: var(--superfice);
     color: var(--laranja);
-
     border: 2px solid var(--laranja);
     border-radius: 7px;
-
     font-weight: 700;
-
     cursor: pointer;
 }
-
 .tema-botao:hover {
     background-color: var(--pessego);
     color: var(--texto-escuro);
-
     border-color: var(--pessego);
 }
-
 .tema-botao.ativo {
     background-color: var(--laranja);
     color: var(--texto-invertido);
 
     border-color: var(--laranja);
 }
-
-
-/* =========================================
-   TEMA ESCURO
-   ========================================= */
-
-/*
- * O tema escuro é controlado pelo
- * variables.css oficial do projeto.
- *
- * Quando o elemento <html> recebe
- * data-tema="escuro", as variáveis
- * mudam automaticamente.
- *
- * Aqui só ajustamos alguns detalhes
- * específicos da tela de configurações.
- */
-
 [data-tema="escuro"] .config-card {
     box-shadow:
         0 4px 12px rgba(0, 0, 0, 0.30);
 }
-
 [data-tema="escuro"] .config-sair {
     background-color: var(--superfice);
     color: var(--laranja);
 
     border-color: var(--superfice);
 }
-
 [data-tema="escuro"] .config-sair:hover {
     background-color: var(--pessego);
     color: var(--texto-escuro);
 
     border-color: var(--pessego);
 }
-
 [data-tema="escuro"] .campo input {
     background-color: var(--superfice);
     color: var(--texto-escuro);
@@ -429,11 +278,9 @@
 [data-tema="escuro"] .botao-visualizar-senha {
     color: var(--texto-suave);
 }
-
-
-/* =========================================
+/* 
    RESPONSIVIDADE
-   ========================================= */
+    */
 
 @media (max-width: 700px) {
 
@@ -455,30 +302,24 @@
         font-size: 1.2rem;
     }
 }
-
-
 @media (max-width: 600px) {
 
     .acessibilidade-container {
         padding: 0 15px;
     }
-
     .home-skip-link {
         font-size: 0.85rem;
 
         padding: 7px 12px;
     }
-
     .config-main {
         width: calc(100% - 30px);
 
         padding-bottom: 40px;
     }
-
     .tema-opcoes {
         flex-direction: column;
     }
-
     .tema-botao {
         width: 100%;
     }

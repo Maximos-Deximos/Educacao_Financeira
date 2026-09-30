@@ -1,22 +1,16 @@
 const nomeUsuario = document.getElementById("nome-usuario");
 const nomeSaudacao = document.getElementById("nome-saudacao");
-
 const formNome = document.getElementById("form-nome");
 const formSenha = document.getElementById("form-senha");
-
 const nomeFeedback = document.getElementById("nome-feedback");
 const senhaFeedback = document.getElementById("senha-feedback");
-
 const temaClaro = document.getElementById("tema-claro");
 const temaEscuro = document.getElementById("tema-escuro");
-
 const CHAVE_NOME = "investiMentes_nome";
 const CHAVE_TEMA = "investiMentes_tema";
-
-
-/* =========================================
+/* 
    FEEDBACK
-   ========================================= */
+   */
 
 function mostrarFeedback(elemento, mensagem, tipo) {
 
@@ -28,12 +22,9 @@ function mostrarFeedback(elemento, mensagem, tipo) {
         elemento.classList.add(tipo);
     }
 }
-
-
-/* =========================================
+/* 
    NOME DE USUÁRIO
-   ========================================= */
-
+    */
 function carregarNome() {
 
     const nomeSalvo = localStorage.getItem(CHAVE_NOME);
@@ -45,8 +36,6 @@ function carregarNome() {
         nomeSaudacao.textContent = nomeSalvo;
     }
 }
-
-
 formNome.addEventListener("submit", function (event) {
 
     event.preventDefault();
@@ -74,11 +63,9 @@ formNome.addEventListener("submit", function (event) {
         "sucesso"
     );
 });
-
-
-/* =========================================
+/* 
    TEMA
-   ========================================= */
+   */
 
 function aplicarTema(tema) {
 
@@ -109,8 +96,6 @@ function aplicarTema(tema) {
         temaEscuro.classList.remove("ativo");
     }
 }
-
-
 function carregarTema() {
 
     const temaSalvo =
@@ -125,8 +110,6 @@ function carregarTema() {
         aplicarTema("light");
     }
 }
-
-
 temaClaro.addEventListener("click", function () {
 
     localStorage.setItem(
@@ -136,8 +119,6 @@ temaClaro.addEventListener("click", function () {
 
     aplicarTema("light");
 });
-
-
 temaEscuro.addEventListener("click", function () {
 
     localStorage.setItem(
@@ -147,33 +128,22 @@ temaEscuro.addEventListener("click", function () {
 
     aplicarTema("dark");
 });
-
-
-/* =========================================
+/* 
    VISUALIZAR SENHA
-   ========================================= */
-
+    */
 const botoesVisualizarSenha =
     document.querySelectorAll(
         ".botao-visualizar-senha"
     );
-
-
 botoesVisualizarSenha.forEach(function (botao) {
-
     botao.addEventListener("click", function () {
-
         const idCampo =
             botao.dataset.target;
-
         const campoSenha =
             document.getElementById(idCampo);
-
         if (!campoSenha) {
             return;
         }
-
-
         if (campoSenha.type === "password") {
 
             campoSenha.type = "text";
@@ -208,91 +178,63 @@ botoesVisualizarSenha.forEach(function (botao) {
         }
     });
 });
-
-
-/* =========================================
+/* 
    ALTERAR SENHA
-   ========================================= */
+    */
 
 formSenha.addEventListener("submit", function (event) {
-
     event.preventDefault();
-
-
     const senhaAtual =
         document.getElementById("senha-atual").value;
-
     const novaSenha =
         document.getElementById("nova-senha").value;
-
     const confirmarSenha =
         document.getElementById("confirmar-senha").value;
-
-
     if (
         !senhaAtual ||
         !novaSenha ||
         !confirmarSenha
     ) {
-
         mostrarFeedback(
             senhaFeedback,
             "Preencha todos os campos.",
             "erro"
         );
-
         return;
     }
-
-
     if (senhaAtual.length > 15) {
-
         mostrarFeedback(
             senhaFeedback,
             "A senha atual deve possuir no máximo 15 caracteres.",
             "erro"
         );
-
         return;
     }
-
-
     if (novaSenha.length > 15) {
-
         mostrarFeedback(
             senhaFeedback,
             "A nova senha deve possuir no máximo 15 caracteres.",
             "erro"
         );
-
         return;
     }
 
-
     if (confirmarSenha.length > 15) {
-
         mostrarFeedback(
             senhaFeedback,
             "A confirmação da senha deve possuir no máximo 15 caracteres.",
             "erro"
         );
-
         return;
     }
-
-
     if (novaSenha !== confirmarSenha) {
-
         mostrarFeedback(
             senhaFeedback,
             "As senhas não coincidem.",
             "erro"
         );
-
         return;
     }
-
-
     /*
      * IMPORTANTE:
      * Aqui deve entrar a comunicação com o back-end.
@@ -300,45 +242,31 @@ formSenha.addEventListener("submit", function (event) {
      * Por enquanto, nenhuma API está sendo chamada.
      * A senha NÃO deve ser salva no localStorage.
      */
-
-
     mostrarFeedback(
         senhaFeedback,
         "Senha validada. A alteração deve ser enviada ao servidor.",
         "sucesso"
     );
-
-
     formSenha.reset();
-
-
     /*
      * Depois de limpar os campos,
      * garantimos que todos voltem a ficar ocultos.
      */
-
     botoesVisualizarSenha.forEach(function (botao) {
-
         botao.textContent = "👁";
-
         botao.setAttribute(
             "aria-label",
             "Mostrar senha"
         );
-
         botao.setAttribute(
             "aria-pressed",
             "false"
         );
-
     });
-
 });
-
-
-/* =========================================
+/* 
    INICIALIZAÇÃO
-   ========================================= */
+    */
 
 carregarNome();
 
