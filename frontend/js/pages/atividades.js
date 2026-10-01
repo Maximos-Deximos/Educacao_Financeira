@@ -21,23 +21,70 @@ function conferirResposta(questao, entrada) {
   return Number(normalizado) === questao.valor;
 }
 
-function iniciarAtividade() {
-  const modulo = MODULOS_ATIVIDADES[document.body.dataset.modulo];
+/* Aparência da questão conforme o veredito devolvido pelo back-end. */
+function aparenciaDaQuestao(acertou) {
+  return acertou
+    ? { estado: 'acerto', feedback: 'Você acertou!', botao: 'Confirmado' }
+    : {
+        estado: 'erro',
+        feedback: 'Ainda não. Revise a questão e tente novamente.',
+        botao: 'Tentar novamente',
+      };
+}
+
+async function iniciarAtividade() {
+  // RF11: as atividades só existem para usuário logado
+  if (!estaAutenticado()) {
+    logout('login.html');
+    return;
+  }
+
+  const numeroModulo = document.body.dataset.modulo;
+  const modulo = MODULOS_ATIVIDADES[numeroModulo];
 
   const container = document.getElementById('questoes');
 
+  // codigo -> { form, input, feedback, button }
+  const campos = new Map();
+  // codigo -> { resposta, acertou }  (o back-end é a fonte da verdade)
   const respostas = new Map();
 
+  function contarConcluidas() {
+    return [...respostas.values()].filter(registro => registro.acertou).length;
+  }
+
   function atualizarProgresso() {
-    const acertos = [...respostas.values()].filter(Boolean).length;
-    document.getElementById('progresso').value = respostas.size;
+    const concluidas = contarConcluidas();
+    const total = modulo.questoes.length;
+
+    document.getElementById('progresso').value = concluidas;
     document.getElementById('progresso-texto').textContent =
-      `${respostas.size} de ${modulo.questoes.length} questões confirmadas · ${acertos} acertos`;
-    document.getElementById('resultado-final').textContent = respostas.size === modulo.questoes.length
-      ? (acertos === modulo.questoes.length
-        ? 'Parabéns! Você acertou todas as questões.'
-        : `Você acertou ${acertos} de ${modulo.questoes.length} questões. Revise suas respostas e tente novamente!`)
-      : '';
+      `${concluidas} de ${total} questões concluídas`;
+
+    const resultado = document.getElementById('resultado-final');
+    if (concluidas === total) {
+      resultado.textContent =
+        'Parabéns! Você concluiu todas as questões deste módulo.';
+    } else {
+      resultado.textContent = '';
+    }
+  }
+
+  function mostrar(campo, acertou) {
+    const visual = aparenciaDaQuestao(acertou);
+    campo.form.dataset.estado = visual.estado;
+    campo.feedback.textContent = visual.feedback;
+    campo.button.textContent = visual.botao;
+  }
+
+  function expirarSessao(resultado) {
+    // RF11: 401 limpa o token e volta para o login
+    if (resultado && resultado.status === 401) {
+      limparToken();
+      window.location.replace('login.html');
+      return true;
+    }
+    return false;
   }
 
   let materiaAtual;
@@ -118,6 +165,8 @@ function iniciarAtividade() {
     form.append(titulo, enunciado, lista, label, ajuda, linha, feedback);
     secao.append(form);
 
+    campos.set(questao.id, { form, input, feedback, button });
+
     input.addEventListener('input', () => {
       respostas.delete(questao.id);
       delete form.dataset.estado;
@@ -129,12 +178,11 @@ function iniciarAtividade() {
       atualizarProgresso();
     });
 
-    form.addEventListener('submit', evento => {
+    form.addEventListener('submit', async evento => {
       evento.preventDefault();
 
-      const resultado = conferirResposta(questao, input.value);
-
-      if (resultado === null) {
+      // Validação de formato igual à de sempre; o back decide o acerto
+      if (conferirResposta(questao, input.value) === null) {
         feedback.textContent = input.value.trim() ? ajuda.textContent : 'Digite uma resposta antes de confirmar.';
         form.dataset.estado = 'erro';
         input.setAttribute('aria-invalid', 'true');
@@ -142,15 +190,71 @@ function iniciarAtividade() {
         return;
       }
 
-      input.removeAttribute('aria-invalid');
-      respostas.set(questao.id, resultado);
-      form.dataset.estado = resultado ? 'acerto' : 'erro';
-      feedback.textContent = resultado ? 'Você acertou!' : 'Ainda não. Revise a questão e tente novamente.';
-      button.textContent = resultado ? 'Confirmado' : 'Tentar novamente';
+      const texto = input.value.trim();
+      button.disabled = true;
+      button.textContent = 'Salvando...';
 
+      let gravado = null;
+      try {
+        gravado = await Progresso.registrarResposta(questao.id, texto);
+      } catch (erro) {
+        gravado = null; // API fora do ar
+      }
+
+      button.disabled = false;
+
+      if (expirarSessao(gravado)) return;
+
+      // RF12: indisponibilidade da API não pode quebrar a página nem
+      // marcar como concluído o que não chegou a ser salvo.
+      if (!gravado || !gravado.ok) {
+        form.dataset.estado = 'falha';
+        feedback.textContent = 'Não foi possível salvar sua resposta agora. Tente de novo em instantes.';
+        input.removeAttribute('aria-invalid');
+        button.textContent = 'Tentar salvar';
+        return;
+      }
+
+      input.removeAttribute('aria-invalid');
+      respostas.set(questao.id, {
+        resposta: gravado.dados.resposta_usuario,
+        acertou: gravado.dados.acertou,
+      });
+      mostrar(campos.get(questao.id), gravado.dados.acertou);
       atualizarProgresso();
     });
   });
+
+  /* Reidrata com o que já está salvo no banco (RF06). */
+  async function carregarSalvo() {
+    let dados = null;
+
+    try {
+      const resultado = await Progresso.obterModulo(numeroModulo);
+      if (expirarSessao(resultado)) return;
+      if (resultado.ok) dados = resultado.dados;
+    } catch (erro) {
+      // API fora do ar: segue com o formulário em branco (RF12)
+    }
+
+    if (!dados) return;
+
+    dados.respostas.forEach(salva => {
+      const campo = campos.get(salva.codigo);
+      if (!campo) return;
+
+      campo.input.value = salva.resposta_usuario;
+      respostas.set(salva.codigo, {
+        resposta: salva.resposta_usuario,
+        acertou: salva.acertou,
+      });
+      mostrar(campo, salva.acertou);
+    });
+
+    atualizarProgresso();
+  }
+
+  await carregarSalvo();
 }
 
 iniciarAtividade();

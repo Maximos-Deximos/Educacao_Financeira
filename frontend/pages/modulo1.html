@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/components/button.css">
 </head>
 
-<body>
+<body data-modulo="1">
     <!--Header padrão-->
     <header class="cabecalho">
     <a class="cabecalho-brand" href="../pages/home.html" aria-label="InvestiMentes — portal inicial">InvestiMentes</a>
@@ -188,9 +188,22 @@
             </section>
         </div>
 
+        <!-- PROGRESSO DO MÓDULO -->
+        <section class="modulo-progresso" aria-labelledby="modulo-progresso-titulo">
+            <h2 id="modulo-progresso-titulo">Seu progresso neste módulo</h2>
+            <p id="modulo-progresso-texto">Carregando seu progresso...</p>
+            <progress id="modulo-progresso-barra" max="16" value="0" aria-label="Questões concluídas"></progress>
+            <p id="modulo-progresso-status"></p>
+        </section>
+
     </main>
 
     <div id="footer"></div>
+    <script src="../js/config/config.js"></script>
+    <script src="../js/services/api.js"></script>
+    <script src="../js/services/auth.js"></script>
+    <script src="../js/services/progresso.js"></script>
+    <script src="../js/pages/modulo.js"></script>
     <script src="../js/components/footer.js"></script>
 
 </body>

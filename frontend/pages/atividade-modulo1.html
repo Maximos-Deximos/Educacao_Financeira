@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="../css/atividades.css">
 
   <script src="../js/data/questoes.js" defer></script>
+  <script src="../js/config/config.js" defer></script>
+  <script src="../js/services/api.js" defer></script>
+  <script src="../js/services/auth.js" defer></script>
+  <script src="../js/services/progresso.js" defer></script>
   <script src="../js/pages/atividades.js" defer></script>
 
 </head>
@@ -38,11 +42,12 @@
       <p>Leia cada questão, digite a letra da alternativa e clique em Confirmar.
       Nas questões que pedem um valor, você também pode digitar o resultado do cálculo.</p>
 
-      <p>Você pode tentar novamente se errar. As respostas desta atividade não são salvas ao sair ou atualizar a página.</p>
+      <p>Você pode tentar novamente se errar. Suas respostas são salvas na conta
+      e o progresso do módulo continua de onde você parou.</p>
 
       <div class="atividade-resumo" role="status" aria-live="polite" aria-atomic="true">
-        <p id="progresso-texto">0 de 16 questões confirmadas · 0 acertos</p>
-        <progress id="progresso" max="16" value="0" aria-label="Questões confirmadas"></progress>
+        <p id="progresso-texto">0 de 16 questões concluídas</p>
+        <progress id="progresso" max="16" value="0" aria-label="Questões concluídas"></progress>
         <p id="resultado-final"></p>
       </div>
     </section>

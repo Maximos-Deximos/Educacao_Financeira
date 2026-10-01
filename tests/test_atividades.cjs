@@ -112,3 +112,74 @@ test('páginas dos módulos apontam para suas próprias atividades e recursos ex
     }
   }
 });
+
+test('atividades carregam a camada de serviços, na ordem de dependência', () => {
+  for (const numero of [1, 2]) {
+    const pagina = path.join(root, `frontend/pages/atividade-modulo${numero}.html`);
+    const html = fs.readFileSync(pagina, 'utf8');
+
+    for (const src of [
+      'js/config/config.js',
+      'js/services/api.js',
+      'js/services/auth.js',
+      'js/services/progresso.js',
+      'js/pages/atividades.js',
+    ]) {
+      assert.ok(html.includes(src), `atividade-modulo${numero}.html não carrega ${src}`);
+    }
+
+    // Os serviços são globais sem módulos: activities.js roda por último.
+    const posicao = src => html.indexOf(`src="../${src}"`);
+    assert.ok(posicao('js/services/progresso.js') < posicao('js/pages/atividades.js'),
+      `progresso.js precisa vir antes de atividades.js no módulo ${numero}`);
+
+    // Nada de statement de topo: o vm do teste não define fetch/localStorage.
+    assert.ok(!/^iniciarAtividade\(\);/m.test(fs.readFileSync(
+      path.join(root, 'frontend/js/pages/atividades.js'), 'utf8').replace(/iniciarAtividade\(\);\s*$/, '')),
+      'atividades.js não pode executar nada fora de função');
+  }
+});
+
+test('páginas de módulo definem data-modulo e exibem o progresso', () => {
+  for (const numero of [1, 2]) {
+    const pagina = path.join(root, `frontend/pages/modulo${numero}.html`);
+    const html = fs.readFileSync(pagina, 'utf8');
+
+    assert.ok(html.includes(`data-modulo="${numero}"`),
+      `modulo${numero}.html precisa de data-modulo="${numero}"`);
+    for (const src of [
+      'js/config/config.js',
+      'js/services/api.js',
+      'js/services/auth.js',
+      'js/services/progresso.js',
+      'js/pages/modulo.js',
+    ]) {
+      assert.ok(html.includes(src), `modulo${numero}.html não carrega ${src}`);
+    }
+    for (const id of ['modulo-progresso-texto', 'modulo-progresso-barra', 'modulo-progresso-status']) {
+      assert.ok(html.includes(`id="${id}"`), `modulo${numero}.html sem #${id}`);
+    }
+    // Só caminhos relativos: a página embute um iframe do YouTube.
+    for (const [, link] of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
+      if (/^[a-z]+:|^\/\//.test(link)) continue;
+      assert.ok(fs.existsSync(path.resolve(path.dirname(pagina), link)), link);
+    }
+  }
+});
+
+test('home mostra o resumo do progresso e carrega o serviço', () => {
+  const pagina = path.join(root, 'frontend/pages/home.html');
+  const html = fs.readFileSync(pagina, 'utf8');
+
+  for (const src of ['js/services/progresso.js', 'js/pages/home.js']) {
+    assert.ok(html.includes(src), `home.html não carrega ${src}`);
+  }
+  for (const id of ['home-progresso-geral', 'home-progresso-barra', 'home-progresso-modulos']) {
+    assert.ok(html.includes(`id="${id}"`), `home.html sem #${id}`);
+  }
+  assert.ok(!html.includes('ainda não está disponível'),
+    'home.html ainda diz que o progresso não está disponível');
+  for (const [, link] of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
+    assert.ok(fs.existsSync(path.resolve(path.dirname(pagina), link)), link);
+  }
+});

@@ -85,8 +85,9 @@
         <h2 id="progress-title">Seu progresso</h2>
       </div>
       <div class="home-progress-message">
-        <p><strong>O acompanhamento do progresso ainda não está disponível.</strong></p>
-        <p>Quando esse recurso estiver disponível, esta área reunirá o resumo da conclusão dos módulos e das atividades.</p>
+        <p id="home-progresso-geral">Carregando seu progresso...</p>
+        <progress id="home-progresso-barra" max="32" value="0" aria-label="Questões concluídas"></progress>
+        <ul id="home-progresso-modulos" class="home-progresso-lista"></ul>
       </div>
     </section>
   </main>
@@ -94,6 +95,7 @@
   <script src="../js/config/config.js"></script>
   <script src="../js/services/api.js"></script>
   <script src="../js/services/auth.js"></script>
+  <script src="../js/services/progresso.js"></script>
   <script src="../js/pages/home.js"></script>
   <script src="../js/components/footer.js"></script>
 </body>

@@ -134,6 +134,24 @@
     background: #832b0e;
 }
 
+/* Estado de falha: a resposta foi validada, mas a API não respondeu */
+.questao-resposta button[disabled] {
+    background: #b0a49c;
+    cursor: progress;
+}
+
+.questao-resposta button[disabled]:hover {
+    background: #b0a49c;
+}
+
+.questao-card[data-estado="falha"] {
+    border-color: #a8730d;
+}
+
+.questao-card[data-estado="falha"] .questao-feedback {
+    color: #8a5a08;
+}
+
 .questao-feedback {
     min-height: 24px;
     margin-top: 12px;

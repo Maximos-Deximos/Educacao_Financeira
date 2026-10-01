@@ -1,0 +1,32 @@
+-- Migração 007: chave natural das questões, materia e resposta numérica.
+-- Ligar o formulário do front (ids m1-q1..m2-q16) ao banco exige uma chave
+-- estável: hoje só existe questao_id BIGINT identity, gerado pelo banco.
+-- ATENÇÃO: create_all() do SQLAlchemy só cria tabelas ausentes, nunca altera
+-- colunas. Esta migration precisa ser aplicada à mão (DBeaver/psql) nos bancos
+-- investimentes (dev) e investimentes_test (pytest).
+
+ALTER TABLE questoes ADD COLUMN IF NOT EXISTS codigo VARCHAR(20);
+ALTER TABLE questoes ADD COLUMN IF NOT EXISTS materia TEXT;
+ALTER TABLE questoes ADD COLUMN IF NOT EXISTS valor_esperado NUMERIC(12, 2);
+
+-- As 4 questões dos seeds antigos não têm código. Código provisório para
+-- não violar o NOT NULL; o seed 004 substitui pelos códigos reais.
+UPDATE questoes SET codigo = 'legado-' || questao_id WHERE codigo IS NULL;
+
+ALTER TABLE questoes ALTER COLUMN codigo SET NOT NULL;
+
+-- Índice único no lugar de ADD CONSTRAINT, que não é idempotente
+CREATE UNIQUE INDEX IF NOT EXISTS uq_questoes_codigo ON questoes (codigo);
+
+-- Alinha o banco de desenvolvimento com o schema.sql (hoje só no de testes)
+CREATE INDEX IF NOT EXISTS idx_questoes_modulo ON questoes (modulo);
+
+DO $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint WHERE conname = 'chk_questoes_modulo'
+    ) THEN
+        ALTER TABLE questoes
+            ADD CONSTRAINT chk_questoes_modulo CHECK (modulo IN (1, 2));
+    END IF;
+END $$;

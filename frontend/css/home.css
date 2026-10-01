@@ -95,6 +95,30 @@
 }
 .home-page .home-progress h2 { margin-top: 10px; }
 .home-page .home-progress-message p + p { margin-top: 8px; }
+.home-page .home-progress-message progress {
+  display: block;
+  width: 100%;
+  margin: 14px 0 4px;
+}
+.home-page .home-progresso-lista {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+.home-page .home-progresso-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #fff;
+}
+.home-page .home-progresso-item span {
+  color: #6b6157;
+  font-size: 0.9rem;
+}
 /* O rodapé herda a fonte global e usa somente layout/footer.css.
    A altura de linha 1.6 fica no conteúdo principal, não no componente. */
 
