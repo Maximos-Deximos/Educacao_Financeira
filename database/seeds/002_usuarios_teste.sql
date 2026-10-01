@@ -3,9 +3,9 @@
 -- Reais na aplicação.
 
 INSERT INTO usuarios (nome, senha_hash) VALUES
-    ('mizera', 'hash_teste1'),
-    ('usuario_teste', 'hash_teste2'),
-    ('usuario_teste2', 'hash_teste3'),
-    ('usuario_teste3', 'hash_teste4');
+    ('sergio', 'hash_teste1'),
+    ('andromeda', 'hash_teste2'),
+    ('9999999999', 'hash_teste3'),
+    ('fhfeuhafudhjahf', 'hash_teste4');
 
 -- senhas hash fictícias para teste.
