@@ -54,7 +54,7 @@ Após levantar o container docker, faça uma conexão a ele utilizando o DBeaver
 
 Quando a conexão for feita:
 - Execute o script schema.SQL
-- Popule as tabelas com as seeds '003' e '004' localizadas em database/seeds/
+- Popule as tabelas com as seeds '002'(opcional) e '004'(obrigatório) localizadas em database/seeds/
 
 ### 3. Configurar ambiente virtual python
 

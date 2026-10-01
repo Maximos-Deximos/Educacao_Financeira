@@ -19,7 +19,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="InvestiMentes_API",
     description="Backend do projeto",
-    version="0.1.0", # ultra beta
+    version="0.2.0", #beta
 )
 
 app.add_middleware(
