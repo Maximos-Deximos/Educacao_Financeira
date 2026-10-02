@@ -2,9 +2,10 @@ import os
 
 import pytest
 
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, inspect
 from sqlalchemy.orm import sessionmaker
 
+# Ignorar erros, são consetados por pytest.ini.
 from app.database import Base
 
 import app.models.usuarios
@@ -25,6 +26,18 @@ test_engine = create_engine(TESTE_DATABASE_URL, pool_pre_ping=True)
 def engine():
     # Garante que as tabelas das models existam, preserva os seeds
     Base.metadata.create_all(test_engine)
+    # Atualiza a seeds teste, sincroniza com as seeds reais
+    colunas = {c["name"] for c in inspect(test_engine).get_columns("questoes")}
+    faltando = {"codigo", "materia", "valor_esperado"} - colunas
+    if faltando:
+        pytest.exit(
+            "Tabela questoes desatualizada (faltam: "
+            f"{', '.join(sorted(faltando))}). Aplique "
+            "database/migrations/007_add_codigo_materias_questoes.sql "
+            "no banco investimentes_test.",
+            returncode=1,
+        )
+
     yield test_engine
 
 # Isola o banco de dados testes

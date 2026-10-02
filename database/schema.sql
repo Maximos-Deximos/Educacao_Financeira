@@ -20,18 +20,25 @@ CREATE TABLE IF NOT EXISTS usuarios (
     nome       VARCHAR(100) NOT NULL,
     senha_hash TEXT         NOT NULL,
 
-    CONSTRAINT pk_usuarios PRIMARY KEY (usuario_id)
+    CONSTRAINT pk_usuarios PRIMARY KEY (usuario_id),
+    CONSTRAINT nome_unico UNIQUE (nome)
 );
 
 -- 2. TABELA questoes
 CREATE TABLE IF NOT EXISTS questoes (
-    questao_id       BIGINT  GENERATED ALWAYS AS IDENTITY,
-    enunciado        TEXT    NOT NULL,
-    resposta_correta TEXT    NOT NULL,
+    questao_id       BIGINT         GENERATED ALWAYS AS IDENTITY,
+    -- chave natural usada pelo formulário do front (m1-q1 ... m2-q16)
+    codigo           VARCHAR(20)    NOT NULL,
+    enunciado        TEXT           NOT NULL,
+    resposta_correta TEXT           NOT NULL,
     -- 1 = módulo básico | 2 = módulo intermediário
-    modulo           SMALLINT NOT NULL,
+    modulo           SMALLINT       NOT NULL,
+    materia          TEXT,
+    -- resposta numérica alternativa (m1-q6 = 40, m1-q15 = 50)
+    valor_esperado   NUMERIC(12, 2),
 
-    CONSTRAINT pk_questoes      PRIMARY KEY (questao_id),
+    CONSTRAINT pk_questoes         PRIMARY KEY (questao_id),
+    CONSTRAINT uq_questoes_codigo  UNIQUE (codigo),
     CONSTRAINT chk_questoes_modulo CHECK (modulo IN (1, 2))
 );
 
@@ -65,20 +72,7 @@ CREATE INDEX IF NOT EXISTS idx_questoes_modulo
 CREATE INDEX IF NOT EXISTS idx_usuarios_questoes_questao
     ON usuarios_questoes (questao_id);
 
--- SEED (dados de exemplo - OPCIONAL)
---
--- Para popular apenas a estrutura, remova as linhas abaixo ou
--- execute apenas a parte 1-4. Os dados abaixo são apenas para
--- desenvolvimento inicial e serão substituídos pelas questões
--- reais definidas em docs/modulos.md.
--- A seed usa ON CONFLICT DO NOTHING para que o schema possa ser
--- reexecutado sem erro (idempotente).
-INSERT INTO questoes (enunciado, resposta_correta, modulo) VALUES
-    ('Pergunta_teste1', 'resposta_teste1', 1),
-    ('Pergunta_teste2', 'resposta_teste2', 1),
-    ('Pergunta_teste3', 'resposta_teste3', 2),
-    ('Pergunta_teste4', 'resposta_teste4', 2)
-ON CONFLICT (id) DO NOTHING;
-
-INSERT INTO usuarios (nome, senha_hash)
-SELECT 'Estudante Exemplo', 'hash_de_teste';
+-- SEEDS
+-- A estrutura fica acima. Os dados de exemplo NÃO ficam aqui: estão em
+-- database/migrations/001..008 e database/seeds/001..003, aplicados em ordem.
+-- Aplicar 004_questoes_reais.sql para popular as 32 questões dos módulos.

@@ -15,7 +15,14 @@ services:
 
     volumes:
       - postgres_data:/var/lib/postgresql
-      - ./docker/postgreSQL/init-test-db.sql:/docker-entrypoint-initdb.d/init-test-db.sql
+      # init-test-db.sql cria o banco investimentes_test (usado por tests/).
+      # Precisa ser um ARQUIVO: o entrypoint passa tudo em
+      # /docker-entrypoint-initdb.d/ para o psql, e um diretório ali faz o
+      # container sair com "Is a directory" e entrar em crash-loop.
+      - ./docker/postgreSQL/init-test-db.sql:/docker-entrypoint-initdb.d/init-test-db.sql:ro
+      # schema.sql e seeds, lidos pelo init-test-db.sql via \i. Read-only e
+      # fora do initdb.d para não virarem scripts de inicialização próprios.
+      - ./database:/opt/database:ro
 
 volumes:
   postgres_data:

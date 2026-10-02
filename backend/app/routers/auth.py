@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
 from app.database import get_db
+from app.models.usuarios import Usuario
 from app.schemas.auth import UserCreate, UserResponse, Token, UserLogin
 from app.services.auth_service import UsuarioJaExisteError, criar_conta, CredenciaisInvalidasError, autenticar_usuario
 

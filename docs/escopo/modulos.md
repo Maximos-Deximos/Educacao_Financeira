@@ -42,28 +42,28 @@ Uma estudante recebe R$80,00 para gastar durante o mês. Ela precisa de R$35,00 
 
 ### Questões
 
-1. Qual situação representa uma necessidade real?
+1. **Resposta: B** Qual situação representa uma necessidade real?
 
 A) Comprar um tênis extra para estar na moda e impressionar os amigos 
 B) Pagar o transporte para chegar à escola e poupar 2 horas de caminhada *
 C) Trocar um celular que ainda está funcional por um novo 
 D) Comprar um PS5 para jogar GTA 6 
 
-2. Fulano pretende comprar um notebook de R$ 2.400,00 para estudar. Após analisar seus gastos mensais, percebeu que todo mês sobra R$ 200,00. Qual atitude representa um planejamento financeiro adequado para alcançar o objetivo de comprar esse notebook?
+2. **Resposta: C** Fulano pretende comprar um notebook de R$ 2.400,00 para estudar. Após analisar seus gastos mensais, percebeu que todo mês sobra R$ 200,00. Qual atitude representa um planejamento financeiro adequado para alcançar o objetivo de comprar esse notebook?
 
 A) Comprar imediatamente no cartão e decidir depois como pagar as parcelas
 B) Guardar valores diferentes a cada mês, sem definir prazo nem acompanhar o progresso 
 C) Definir o valor de R$ 2.400,00 como meta, reservar R$ 200,00 mensalmente e quando tiver o dinheiro do notebook e o comprar *
 D) Não ligar para economizar o dinheiro e focar em receber dinheiro de mesada de seus pais, mesmo que não seja algo garantido 
 
-3. Ao gastar todo o dinheiro reservado para um curso em uma compra por impulso, o estudante:
+3. **Resposta: A** Ao gastar todo o dinheiro reservado para um curso em uma compra por impulso, o estudante:
 
-A) Enfrentará consequências futuras, podendo perder o curso
-B) Se deu bem e não enfrenta consequências, pois ele comprou o que queria e é isso o que importa *
+A) Enfrentará consequências futuras, podendo perder o curso *
+B) Se deu bem e não enfrenta consequências, pois ele comprou o que queria e é isso o que importa
 C) Cumpriu com suas prioridades estudantis
 D) Se dá bem, pois quem paga o curso é o pai dele e não é importante cuidar do dinheiro dos outros
 
-4. Qual atitude combina o equilíbrio entre a emoção e a razão em uma escolha financeira?
+4. **Resposta: C** Qual atitude combina o equilíbrio entre a emoção e a razão em uma escolha financeira?
 
 A) Comprar sem comparar o preço do produto desejado e o orçamento atual do estudante porque a promoção termina hoje 
 B) Ignorar todas as vontades pessoais pois não existe necessidade do ser humano ter emoções e desejos financeiros
@@ -93,28 +93,28 @@ Pontos principais
 
 ### Questões
 
-1. Um dia, uma estudante decidiu organizar sua vida financeira. Ela anotou o dinheiro que recebeu, registrou os gastos com a alimentação, transporte, lazer e analisou quanto restou no final do mês. Do que chamamos essa organização?
+1. **Resposta: B** Um dia, uma estudante decidiu organizar sua vida financeira. Ela anotou o dinheiro que recebeu, registrou os gastos com a alimentação, transporte, lazer e analisou quanto restou no final do mês. Do que chamamos essa organização?
 
 A) Empréstimo pessoal, pois envolve valores recebidos durante o mês
 B) Orçamento, pois reúne receitas, despesas e planejamento do uso do dinheiro *
 C) Investimento, pois registra todos os valores gastos durante o mês
 D) Financiamento, pois organiza os pagamentos relacionados às despesas do mês 
 
-2. Rafael recebeu R$300,00 durante um mês. Após registrar os seus gastos ele identificou que R$120,00 eram gastos com transporte, R$80,00 com alimentação e R$60,00 com lazer. Após pagar todas essas despesas, qual foi o resultado do orçamento final de Rafael?
+2. **Resposta: A** Rafael recebeu R$300,00 durante um mês. Após registrar os seus gastos ele identificou que R$120,00 eram gastos com transporte, R$80,00 com alimentação e R$60,00 com lazer. Após pagar todas essas despesas, qual foi o resultado do orçamento final de Rafael?
 
 A) Houve uma sobra de R$40,00. Pois sua receita foi maior do que suas despesas *
 B) Houve um déficit de R$40,00. Pois Rafael gastou mais do que recebeu
 C) Houve uma sobra de R$260,00. Pois esse foi o valor total das despesas
 D) O resultado foi igual a zero, pois todos os gastos foram planejados 
 
-3. Ao organizar o seu orçamento mensal, Amanda decidiu separar seus gastos em categorias. Durante a semana ela pagou R$12,00 em uma passagem de ônibus, R$25,00 em um caderno, R$18,00 em um almoço e R$20,00 em um ingresso de cinema. Qual dessas despesas pertence à categoria transporte?
+3. **Resposta: A** Ao organizar o seu orçamento mensal, Amanda decidiu separar seus gastos em categorias. Durante a semana ela pagou R$12,00 em uma passagem de ônibus, R$25,00 em um caderno, R$18,00 em um almoço e R$20,00 em um ingresso de cinema. Qual dessas despesas pertence à categoria transporte?
 
 A) O pagamento de R$12,00 pela passagem de ônibus *
 B) O pagamento de R$25,00 pelo caderno escolar
 C) O pagamento de R$18,00 pelo almoço
 D) O pagamento de R$20,00 pelo ingresso de cinema 
 
-4. Mariana recebe uma quantia mensal de seus tios e deseja organizar melhor seus gastos. Nos últimos meses ela percebeu dificuldade de entender onde seu dinheiro estava sendo gasto. Qual atitude ajudaria Mariana a ter maior controle sobre seu orçamento?
+4. **Resposta: C** Mariana recebe uma quantia mensal de seus tios e deseja organizar melhor seus gastos. Nos últimos meses ela percebeu dificuldade de entender onde seu dinheiro estava sendo gasto. Qual atitude ajudaria Mariana a ter maior controle sobre seu orçamento?
 
 A) Registrar somente compras de valores elevados, deixando pequenos gastos fora de sua investigação
 B) Fazer novas compras parceladas sempre que ainda houver limite disponível no cartão
@@ -146,21 +146,21 @@ Pontos principais
 
 ### Questões
 
-1. Ana recebeu R$80,00 para comprar alguns materiais escolares. Antes de ir à loja, ela fez uma lista do necessário, pesquisou os preços em duas lojas e verificou o quanto conseguiria gastar sem ultrapassar o valor disponível. Qual atitude de Ana representa melhor o consumo planejado?
+1. **Resposta: C** Ana recebeu R$80,00 para comprar alguns materiais escolares. Antes de ir à loja, ela fez uma lista do necessário, pesquisou os preços em duas lojas e verificou o quanto conseguiria gastar sem ultrapassar o valor disponível. Qual atitude de Ana representa melhor o consumo planejado?
 
 A) Comprar primeiro os produtos em promoção e depois verificar se eram necessários
 B) Escolher os produtos de marcas mais conhecidas, mesmo ultrapassando o valor disponível
 C) Identificar suas necessidades, comparar preços e respeitar o limite de dinheiro disponível *
 D) Comprar uma quantidade maior de produtos para evitar voltar à loja durante o mês 
 
-2. Uma família percebeu aumento nas despesas mensais. Ao analisar seus hábitos, identificaram alimentos comprados em excesso e descartados após estragarem, luzes acesas em cômodos vazios e multas relacionadas ao atraso de algumas contas. Qual mudança contribuiria melhor para reduzir esses desperdícios?
+2. **Resposta: B** Uma família percebeu aumento nas despesas mensais. Ao analisar seus hábitos, identificaram alimentos comprados em excesso e descartados após estragarem, luzes acesas em cômodos vazios e multas relacionadas ao atraso de algumas contas. Qual mudança contribuiria melhor para reduzir esses desperdícios?
 
 A) Comprar uma quantidade maior de alimentos quando houver promoção, mesmo sem previsão de consumo
 B) Planejar as compras, evitar desperdício de alimentos e energia e organizar as datas de pagamento das contas *
 C) Concentrar a redução de gastos somente nas atividades de lazer da família
 D) Parcelar as contas atrasadas e manter os mesmos hábitos de consumo nos meses seguintes 
 
-3. Em um supermercado, dois pacotes do mesmo produto apresentam as seguintes informações:
+3. **Resposta: B** Em um supermercado, dois pacotes do mesmo produto apresentam as seguintes informações:
 
 Pacote A: 500 g por R$8,00
 Pacote B: 800 g por R$10,00
@@ -172,9 +172,10 @@ B) Pacote B. Pois oferece uma quantidade maior em relação ao valor pago e ser�
 C) Pacote A. Pois embalagens menores sempre apresentam menor desperdício
 D) Pacote B. Pois produtos maiores sempre representam a melhor escolha, independentemente do consumo 
 
-4. Pedro viu um tênis anunciado com a mensagem “ Últimas unidades, compre somente agora”. O produto custava R$180,00, Pedro já possuía um tênis em boas condições e havia separado esse dinheiro para comprar materiais de um curso no mês seguinte. Qual decisão demonstra maior consciência financeira?
+4. **Resposta: C** Pedro viu um tênis anunciado com a mensagem “ Últimas unidades, compre somente agora”. O produto custava R$180,00, Pedro já possuía um tênis em boas condições e havia separado esse dinheiro para comprar materiais de um curso no mês seguinte. Qual decisão demonstra maior consciência financeira?
 
-A) Comprar o tênis imediatamente, pois a quantidade limitada indica uma oportunidade imperdível B) Comprar o tênis parcelado, pois dessa forma o valor não será gasto de uma única vez
+A) Comprar o tênis imediatamente, pois a quantidade limitada indica uma oportunidade imperdível
+B) Comprar o tênis parcelado, pois dessa forma o valor não será gasto de uma única vez
 C) Avaliar a necessidade da compra e manter o dinheiro destinado ao objetivo já planejado caso o tênis não seja necessário *
 D) Comprar o tênis e depois buscar outra forma de conseguir dinheiro para os materiais do curso
 
@@ -203,28 +204,28 @@ Pontos principais
 
 ### Questões
 
-1. Júlia pretende comprar materiais para um curso no valor de R$360, daqui a seis meses. Após organizar seus gastos, ela percebeu que R$60,00 por mês ficam disponíveis. Qual atitude representa melhor o planejamento dessa meta financeira?
+1. **Resposta: A** Júlia pretende comprar materiais para um curso no valor de R$360, daqui a seis meses. Após organizar seus gastos, ela percebeu que R$60,00 por mês ficam disponíveis. Qual atitude representa melhor o planejamento dessa meta financeira?
 
 A) Separar R$60,00 todos os meses e acumular dinheiro até atingir os R$360,00 *
 B) Esperar os seis meses passarem e verificar quanto dinheiro restou nesse período
 C) Gastar os R$60,00 mensais e comprar os materiais parcelados quando iniciar o curso
 D) Guardar dinheiro somente nos meses em que não surgir nenhuma vontade de comprar outra coisa 
 
-2. Pedro mantém R$300,00 guardados para comprar uma bicicleta no fim do ano e outros R$150,00 separados para caso ocorra algo inesperado. Durante o mês seus óculos usados para estudar quebram e precisam de conserto imediato. Qual decisão está mais de acordo com a função da reserva para imprevistos?
+2. **Resposta: B** Pedro mantém R$300,00 guardados para comprar uma bicicleta no fim do ano e outros R$150,00 separados para caso ocorra algo inesperado. Durante o mês seus óculos usados para estudar quebram e precisam de conserto imediato. Qual decisão está mais de acordo com a função da reserva para imprevistos?
 
 A) Usar primeiro o dinheiro destinado à bicicleta, pois toda quantia guardada possui a mesma finalidade
 B) Usar parte da reserva para imprevistos, pois surgiu uma despesa necessária e não planejada *
 C) Comprar outro item desejado e deixar o conserto dos óculos para o mês seguinte
 D) Gastar toda a reserva, mesmo se o conserto exigir somente uma parte dela 
 
-3. Gabriel deseja participar de uma atividade escolar daqui a oito meses, o custo previsto é de R$480,00 e ele já possui R$80,00 guardados para isso. Mantendo o mesmo valor de poupança mensal durante os próximos oito meses, quanto é que ele precisa separar por mês para alcançar essa meta?
+3. **Resposta: B** Gabriel deseja participar de uma atividade escolar daqui a oito meses, o custo previsto é de R$480,00 e ele já possui R$80,00 guardados para isso. Mantendo o mesmo valor de poupança mensal durante os próximos oito meses, quanto é que ele precisa separar por mês para alcançar essa meta?
 
 A) R$40,00 por mês
 B) R$50,00 por mês *
 C) R$60,00 por mês
-D) R$80,oo por mês 
+D) R$80,00 por mês
 
-4. Carlos Roberto organizou seu orçamento e decidiu separar R$40,00 por mês para uma meta definida e manter sua reserva para situações inesperadas. No meio do mês os seus amigos o convidaram para um passeio de R$40,00. Porém, ele já havia usado todo o dinheiro destinado ao seu lazer. Qual a decisão que demonstra maior compromisso com seu planejamento financeiro?
+4. **Resposta: C** Carlos Roberto organizou seu orçamento e decidiu separar R$40,00 por mês para uma meta definida e manter sua reserva para situações inesperadas. No meio do mês os seus amigos o convidaram para um passeio de R$40,00. Porém, ele já havia usado todo o dinheiro destinado ao seu lazer. Qual a decisão que demonstra maior compromisso com seu planejamento financeiro?
 
 A) Retirar R$40,00 da reserva para imprevistos, pois ela está disponível
 B) Usar os R$ 40 destinados à meta e começar novamente no mês seguinte
@@ -305,7 +306,7 @@ Pontos principais
 
 ### Questões
 
-1. João precisa comprar um computador para estudar e encontrou duas formas de pagamento para o mesmo produto.
+1. **Resposta: B** João precisa comprar um computador para estudar e encontrou duas formas de pagamento para o mesmo produto.
 
 Opção A: 10 parcelas de R$ 190
 Opção B: 8 parcelas de R$ 225
@@ -318,26 +319,26 @@ C) As duas opções possuem o mesmo custo, pois ambas são compras parcelada
 D) A Opção A é sempre melhor, pois um prazo maior reduz o custo do crédito. 
 
 
-2. Uma família deseja fazer dois empréstimos de R$2.000,00. A instituição A anuncia uma taxa de juros menor, mas cobra tarifas adicionais. A instituição B apresenta juros um pouco maiores, porém possui menos encargos. Qual informação deve receber maior atenção para comparar o custo completo das duas propostas?
+2. **Resposta: C** Uma família deseja fazer dois empréstimos de R$2.000,00. A instituição A anuncia uma taxa de juros menor, mas cobra tarifas adicionais. A instituição B apresenta juros um pouco maiores, porém possui menos encargos. Qual informação deve receber maior atenção para comparar o custo completo das duas propostas?
 
 A) O valor máximo de crédito oferecido por cada instituição
 B) A quantidade de propagandas feitas por cada instituição
 C) O Custo Efetivo Total, pois ele reúne juros, tarifas, impostos e outras despesas da operação
 D) Somente a taxa de juros anunciada, pois outros encargos não interferem no custo do empréstimo 
 
-3. Marina recebeu uma fatura de cartão de crédito de R$600,00. Entretanto ela decidiu pagar somente R$300,00 no vencimento. Considerando o funcionamento do cartão de crédito, o que acontece com o restante da dívida?
+3. **Resposta: B** Marina recebeu uma fatura de cartão de crédito de R$600,00. Entretanto ela decidiu pagar somente R$300,00 no vencimento. Considerando o funcionamento do cartão de crédito, o que acontece com o restante da dívida?
 
-A) Os R$300,00 restantes são cancelados porque Marina pagou parte da fatur
+A) Os R$300,00 restantes são cancelados porque Marina pagou parte da fatura
  B) Os R$300,00 restantes continuam sendo uma dívida e podem receber juros e encargos na cobrança seguinte
 C) O valor restante passa automaticamente para o mês seguinte sem qualquer custo adicional
 D) A loja responsável pelas compras assume o valor restante da fatura 
 
-4. Felipe recebe R$900,00 por mês. Atualmente, R$250,00 já estão atribuídos a outras parcelas. Ele deseja comprar um celular em 10 parcelas de R$120,00. Antes de assumir essa nova dívida, qual análise demonstra maior responsabilidade financeira?
+4. **Resposta: C** Felipe recebe R$900,00 por mês. Atualmente, R$250,00 já estão atribuídos a outras parcelas. Ele deseja comprar um celular em 10 parcelas de R$120,00. Antes de assumir essa nova dívida, qual análise demonstra maior responsabilidade financeira?
 
 A) Verificar somente se ainda existe limite disponível no cartão de crédito
 B) Aceitar a compra porque R$ 120 parece um valor pequeno quando analisado isoladamente
 C) Verificar quanto da renda já está comprometida, calcular o impacto das novas parcelas e analisar se continuará conseguindo pagar suas demais despesas
-D) Escolher um número maior 
+D) Escolher um número maior de parcelas sem avaliar o custo total nem o impacto no orçamento
 
 ## Matéria 2 - Endividamento, superendividamento e reorganização financeira
 
@@ -362,28 +363,28 @@ Pontos principais
 
 ### Questões
 
-1. Uma família recebe R$3.000,00 por mês. Deste valor R$1.400,00 são usados em despesas essenciais e R$1.100,00 já estão comprometidos com prestações, cartão de crédito e empréstimos. Mesmo assim a família pretende assumir uma nova compra parcelada de R$400,00 por mês. Qual análise demonstra maior cuidado financeiro?
+1. **Resposta: C** Uma família recebe R$3.000,00 por mês. Deste valor R$1.400,00 são usados em despesas essenciais e R$1.100,00 já estão comprometidos com prestações, cartão de crédito e empréstimos. Mesmo assim a família pretende assumir uma nova compra parcelada de R$400,00 por mês. Qual análise demonstra maior cuidado financeiro?
 
 A) Fazer a nova compra porque a renda mensal é maior do que o valor da parcela
 B) Assumir a compra e reduzir gastos essenciais caso falte dinheiro
 C) Verificar primeiro quanto da renda já está comprometida e evitar nova dívida se ela dificultar o pagamento das despesas essenciais
 D) Fazer a compra no maior número possível de parcelas, pois parcelas menores eliminam o risco de endividamento 
 
-2. Carlos percebeu que perdeu o controle das finanças. Ele possui dívida no cartão, empréstimo pessoal e três compras parceladas, mas não sabe exatamente quanto deve, quais são os juros nem quando cada compromisso termina. Qual deve ser uma das primeiras atitudes para iniciar sua reorganização financeira?
+2. **Resposta: B** Carlos percebeu que perdeu o controle das finanças. Ele possui dívida no cartão, empréstimo pessoal e três compras parceladas, mas não sabe exatamente quanto deve, quais são os juros nem quando cada compromisso termina. Qual deve ser uma das primeiras atitudes para iniciar sua reorganização financeira?
 
 A) Fazer outro empréstimo imediatamente para pagar algumas contas
 B) Listar todas as dívidas, registrando valores, parcelas, prazos e custos para compreender sua situação.
 C) Pagar aleatoriamente as contas que chegarem primeiro.
 D) Parar de acompanhar as dívidas até conseguir aumentar sua renda. 
 
-3. Marcelo possui várias dívidas, depois de pagar as suas parcelas mensais sobra tão pouco dinheiro que ele encontra dificuldade para comprar até alimentos e pagar as despesas básicas da casa. Qual situação descreve melhor o problema apresentado?
+3. **Resposta: B** Marcelo possui várias dívidas, depois de pagar as suas parcelas mensais sobra tão pouco dinheiro que ele encontra dificuldade para comprar até alimentos e pagar as despesas básicas da casa. Qual situação descreve melhor o problema apresentado?
 
 A) Marcelo está somente fazendo uso normal do crédito, pois ainda consegue pagar algumas parcelas
 B) Marcelo está em uma situação de superendividamento, pois suas dívidas estão comprometendo sua capacidade de atender necessidades básicas
 C) Marcelo possui somente um problema de organização, independentemente da relação entre renda e dívidas
 D) Marcelo não está endividado porque ainda possui renda mensal 
 
-4. Depois de listar suas dívidas, uma família encontrou a seguinte situação:
+4. **Resposta: C** Depois de listar suas dívidas, uma família encontrou a seguinte situação:
 
 Dívida A: Juros elevados no cartão de crédito
 Dívida B: Parcelas com juros menores
@@ -421,14 +422,14 @@ Pontos principais
 
 ### Questões
 
-1. Depois de organizar seu orçamento, Rafael conseguiu guardar R$600,00. Em vez de gastar esse valor ele decidiu reservá-lo para um objetivo futuro. Depois ele aplicou parte desse dinheiro esperando obter algum rendimento. Considerando os conceitos estudados, como as duas etapas são descritas corretamente?
+1. **Resposta: B** Depois de organizar seu orçamento, Rafael conseguiu guardar R$600,00. Em vez de gastar esse valor ele decidiu reservá-lo para um objetivo futuro. Depois ele aplicou parte desse dinheiro esperando obter algum rendimento. Considerando os conceitos estudados, como as duas etapas são descritas corretamente?
 
 A) Guardar os R$600,00 já representa um investimento, mesmo sem aplicar o dinheiro
 B) A formação dos R$600,00 representa poupança, enquanto a aplicação de parte desse valor com expectativa de retorno representa investimento
 C) Tanto guardar quanto investir significam exatamente a mesma coisa
 D) O valor só será considerado poupança se permanecer guardado durante vários anos
 
-2. Beatriz possui uma reserva destinada a despesas inesperadas. Ela está analisando duas aplicações:
+2. **Resposta: A** Beatriz possui uma reserva destinada a despesas inesperadas. Ela está analisando duas aplicações:
 
 Aplicação A: Permite retirar o dinheiro rapidamente
 Aplicação B: Exige esperar vários meses para ter acesso ao valor sem determinadas limitações
@@ -440,7 +441,7 @@ B) Rentabilidade, pois toda reserva para imprevistos precisa ter o maior rendime
 C) Risco, pois investimentos com maior risco sempre oferecem retirada imediata
 D) Prazo da propaganda, pois ofertas com menor duração apresentam melhores condições 
 
-3. Dois investimentos apresentam características diferentes:
+3. **Resposta: C** Dois investimentos apresentam características diferentes:
 
 Investimento A: Menor possibilidade de perda e retorno esperado menor
 Investimento B: Maior possibilidade de perda e retorno esperado maior
@@ -452,7 +453,7 @@ B) O Investimento A não apresenta risco algum porque oferece retorno menor
 C) Maior expectativa de rentabilidade costuma estar associada à aceitação de maior risco, mas o retorno esperado não é garantido
 D) Risco e rentabilidade não possuem relação e devem ser analisados separadamente 
 
-4. Lucas recebeu pela internet uma oferta de investimento com a seguinte propaganda:
+4. **Resposta: C** Lucas recebeu pela internet uma oferta de investimento com a seguinte propaganda:
 
 “ Ganhe rendimentos muito acima do mercado e retire seu dinheiro quando quiser e tenha risco praticamente zero! ”
 
@@ -485,28 +486,28 @@ Pontos principais
 
 ### Questões
 
-1. Durante uma viagem, a família de Ana teve o celular furtado. Além do prejuízo com o aparelho, havia aplicativos bancários instalados nele. Qual atitude representa melhor uma resposta preventiva diante desse tipo de risco
+1. **Resposta: B** Durante uma viagem, a família de Ana teve o celular furtado. Além do prejuízo com o aparelho, havia aplicativos bancários instalados nele. Qual atitude representa melhor uma resposta preventiva diante desse tipo de risco
 
 A) Esperar alguns dias para verificar se alguém utilizará o aparelho antes de tomar qualquer providência
 B) Bloquear o aparelho e os acessos bancários, alterar senhas importantes e comunicar as instituições envolvidas
 C) Compartilhar as senhas com familiares para que eles acompanhem as movimentações
 D) Continuar usando as mesmas senhas, pois o bloqueio do aparelho elimina qualquer risco financeiro 
 
-2. Pedro recebe uma mensagem de um amigo dizendo que perdeu o acesso à própria conta e precisa urgentemente de um Pix de R$300,00 para uma conta em nome de outra pessoa. A mensagem usa a foto e o nome do amigo. Qual atitude é mais segura?
+2. **Resposta: C** Pedro recebe uma mensagem de um amigo dizendo que perdeu o acesso à própria conta e precisa urgentemente de um Pix de R$300,00 para uma conta em nome de outra pessoa. A mensagem usa a foto e o nome do amigo. Qual atitude é mais segura?
 
 A) Fazer a transferência imediatamente, pois a foto do contato comprova a identidade
 B) Pedir a senha bancária do amigo antes de realizar a transferência
 C) Confirmar o pedido por ligação, chamada de vídeo ou contato direto antes de transferir qualquer valor
 D) Clicar no link enviado na mensagem para verificar se o pedido é verdadeiro 
 
-3. Uma família possui uma reserva de emergência, mas também decidiu contratar um seguro residencial. Depois de alguns meses, ocorreu um dano coberto pelo contrato. Ao consultar a apólice, a família identificou uma franquia de R$500,00. O que essa informação significa?
+3. **Resposta: B** Uma família possui uma reserva de emergência, mas também decidiu contratar um seguro residencial. Depois de alguns meses, ocorreu um dano coberto pelo contrato. Ao consultar a apólice, a família identificou uma franquia de R$500,00. O que essa informação significa?
 
 A) A seguradora sempre pagará R$ 500 a mais do que o valor do prejuízo
 B) A franquia representa uma parte do prejuízo prevista no contrato que ficará sob responsabilidade do segurado
 C) A franquia corresponde ao valor total pago mensalmente pelo seguro
 D) A franquia representa o valor máximo que a seguradora pode receber do segurado 
 
-4. Uma família deseja se proteger melhor contra imprevistos e também organizar seus objetivos para os próximos anos. Qual conjunto de atitudes demonstra uma estratégia financeira mais equilibrada?
+4. **Resposta: B** Uma família deseja se proteger melhor contra imprevistos e também organizar seus objetivos para os próximos anos. Qual conjunto de atitudes demonstra uma estratégia financeira mais equilibrada?
 
 A) Utilizar toda a reserva disponível para consumo e recorrer ao crédito caso ocorra uma emergência
 B) Manter uma reserva para emergências, adotar medidas preventivas, avaliar seguros adequados às necessidades e planejar objetivos de longo prazo
