@@ -119,3 +119,24 @@ A branch dev serve como uma maneira de realizar patches e fixes de maneira rapid
 ### Justificativa
 
 Atender o critério da atividade e facilitar o desenvolvimento da aplicação web
+
+## DEC 04/10/2026
+
+**AREA:** frontend/repo
+
+### Contexto
+
+O projeto necessita de uma pagina de configurações onde o usuario pode realizar mudanças de nome de conta e mudança de senha, como também a mudanã de tema claro/escuro
+
+O projeto já contem uma branch onde as funcionalidades de front e back(ainda não testado) já foram feitas
+Porem, serviõs fundamentais da API, backend foram deletados pelo usuário matheusthediver; commit 8fc8967.
+A remoção desses serviõs passou despercebido e foi detectada hoje dia 04/10.
+
+### Decisão
+
+Seria mais facil somente recriar a partir de uma branch estavel as funcionalidades de feat/config (mais facil do que tentar recuperar a branch)
+
+### Justificativa
+
+Facilitar o processo de desenvolvimento
+
