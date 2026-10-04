@@ -237,6 +237,20 @@ body {
    ATIVIDADE E COMPLEMENTAR
 ========================= */
 
+.atividade {
+    color: inherit;
+    text-decoration: none;
+}
+
+.atividade:hover {
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.atividade:focus-visible {
+    outline: 3px solid #934020;
+    outline-offset: 4px;
+}
+
 .atividade,
 .complementar {
     min-height: 95px;
@@ -408,6 +422,51 @@ body {
 
     margin-bottom: 12px;
 
+}
+
+
+/* =========================
+   PROGRESSO DO MÓDULO
+========================= */
+
+.modulo-progresso {
+
+    background: white;
+
+    border-radius: 28px;
+
+    padding: 30px;
+
+    margin-top: 24px;
+
+    margin-bottom: 24px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.modulo-progresso h2 {
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.modulo-progresso p {
+
+    color: #727982;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+
+.modulo-progresso progress {
+
+    display: block;
+
+    width: 100%;
+
+    margin: 16px 0 10px;
 }
 
 

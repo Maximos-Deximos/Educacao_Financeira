@@ -22,7 +22,7 @@ Veja desenvolvimento.md
 
 - docker
 - python3
-- Dbeaver ou outro editor de banco de dados
+- Dbeaver
 
 ## Instalação
 
@@ -34,7 +34,10 @@ cd /local-de-clonagem/InvestiMentes
 
 ### 2. Configurar o banco de dados
 
-TODO: exibir senha de .env?
+Na raiz do projeto:
+- Criar arquivo .env e popular ele com o .env.example
+- Adicionar a senha do banco de dados (POSTGRES_PASSWORD)
+- Adicionar senha de autenticação JWT (SECRET_KEY)
 
 Na raiz do projeto execute:
 ```text
@@ -45,9 +48,13 @@ Verifique que o container docker está rodando:
 docker ps
 ```
 
-Criação das tabelas
+#### Criação das tabelas
 
-Após iniciar o banco de dados, execute o scrip schema.sql dentro do Dbeaver
+Após levantar o container docker, faça uma conexão a ele utilizando o DBeaver
+
+Quando a conexão for feita:
+- Execute o script schema.SQL
+- Popule as tabelas com as seeds '002'(opcional) e '004'(obrigatório) localizadas em database/seeds/
 
 ### 3. Configurar ambiente virtual python
 

@@ -120,6 +120,20 @@ A branch dev serve como uma maneira de realizar patches e fixes de maneira rapid
 
 Atender o critério da atividade e facilitar o desenvolvimento da aplicação web
 
+## DEC 02/10/2026
+
+**Área:** Estrutura/Arquitetura
+
+## Contexto
+Está planejado para a aplicação web conter formulários contendo questões abertas, os (formularios atuais são um placeholder) e essa feature está planejada para acontecer, mas, talvez nçao haja tempo suficiente para implementar-la.
+
+### Decisão
+
+Adiar implementação da feature até que esteja finalizado a apresentação do projeto. Placeholder continua somente para fins de apresentação do MVP
+
+## Justificativa
+
+Não sufocar o projeto ou danificar a integridade do projeto com uma feature desenvolvida as preças em pouco tempo.
 ## DEC 04/10/2026
 
 **AREA:** frontend/repo

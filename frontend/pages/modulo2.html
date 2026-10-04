@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="../css/components/button.css">
 </head>
 
-<body>
+<body data-modulo="2">
     <!--header padrão-->
     <header class="cabecalho">
-    <a class="cabecalho-brand" href="../index.html" aria-label="InvestiMentes — portal inicial">InvestiMentes</a>
+    <a class="cabecalho-brand" href="../pages/home.html" aria-label="InvestiMentes — portal inicial">InvestiMentes</a>
     <div class="cabecalho-acoes">
       <a href="./home.html" class="btn btn--contorno">Voltar</a>
     </div>
@@ -114,7 +114,7 @@
 
 
             <!-- ATIVIDADE -->
-            <section class="card atividade">
+            <a class="card atividade" href="atividade-modulo2.html">
 
                 <div class="icone atividade-icone">
                     ▶
@@ -127,7 +127,7 @@
                     </h2>
 
                     <p>
-                        5 questões
+                        16 questões
                     </p>
 
                 </div>
@@ -136,33 +136,7 @@
                     ›
                 </span>
 
-            </section>
-
-
-            <!-- AULA COMPLEMENTAR -->
-            <section class="card complementar">
-
-                <div class="icone">
-                    📖
-                </div>
-
-                <div class="texto-card">
-
-                    <h2>
-                        Aula Complementar
-                    </h2>
-
-                    <p>
-                        Investimentos e planejamento
-                    </p>
-
-                </div>
-
-                <span class="seta">
-                    ›
-                </span>
-
-            </section>
+            </a>
 
 
             <!-- INFORMAÇÕES DO MÓDULO -->
@@ -186,8 +160,21 @@
             </section>
         </div>
 
+        <!-- PROGRESSO DO MÓDULO -->
+        <section class="modulo-progresso" aria-labelledby="modulo-progresso-titulo">
+            <h2 id="modulo-progresso-titulo">Seu progresso neste módulo</h2>
+            <p id="modulo-progresso-texto">Carregando seu progresso...</p>
+            <progress id="modulo-progresso-barra" max="16" value="0" aria-label="Questões concluídas"></progress>
+            <p id="modulo-progresso-status"></p>
+        </section>
+
     </main>
     <div id="footer"></div>
+    <script src="../js/config/config.js"></script>
+    <script src="../js/services/api.js"></script>
+    <script src="../js/services/auth.js"></script>
+    <script src="../js/services/progresso.js"></script>
+    <script src="../js/pages/modulo.js"></script>
     <script src="../js/components/footer.js"></script>
 
 </body>

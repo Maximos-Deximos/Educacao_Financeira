@@ -8,6 +8,7 @@ import app.models.questoes
 import app.models.usuarios_questoes
 from app.routers import auth
 from app.routers import usuario
+from app.routers import form
 
 # Routers serão implementados conforme forem adicionados
 
@@ -18,7 +19,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="InvestiMentes_API",
     description="Backend do projeto",
-    version="0.1.0", # ultra beta
+    version="0.2.0", #beta
 )
 
 app.add_middleware(
@@ -32,7 +33,7 @@ app.add_middleware(
 # todo
 # Inclui os routers quando existirem
 app.include_router(auth.router, prefix="/auth", tags=["auth"])
-# app.include_router(form.router, prefix="/form", tags=["form"])
+app.include_router(form.router, prefix="/form", tags=["form"])
 
 @app.get("/health", tags=["health"])
 def health_check():

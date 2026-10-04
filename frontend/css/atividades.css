@@ -1,0 +1,222 @@
+.atividades-container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+}
+
+.atividade-intro {
+    margin-bottom: 40px;
+}
+
+.atividade-etiqueta {
+    color: #934020;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-size: .85rem;
+}
+
+.atividade-intro h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 12px 0 20px;
+}
+
+.atividade-intro > p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.atividade-resumo {
+    background: #f7c89f;
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-top: 24px;
+    font-weight: 600;
+}
+
+.atividade-resumo progress {
+    width: 100%;
+    height: 12px;
+    accent-color: #ac3c12;
+    margin-top: 12px;
+}
+
+#resultado-final:not(:empty) {
+    margin-top: 12px;
+}
+
+.atividade-materia {
+    margin-bottom: 40px;
+}
+
+.atividade-materia > h2 {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.questao-card {
+    background: white;
+    border: 1px solid #e4d8c8;
+    border-top: 4px solid #ff6930;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 20px;
+}
+
+.questao-card h3 {
+    color: #934020;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.questao-enunciado {
+    white-space: pre-line;
+    line-height: 1.7;
+}
+
+.questao-alternativas {
+    list-style-type: upper-alpha;
+    padding-left: 28px;
+    margin: 20px 0 24px;
+}
+
+.questao-alternativas li {
+    padding-left: 6px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.questao-alternativas li::marker {
+    font-weight: 700;
+}
+
+.questao-card label {
+    display: block;
+    font-weight: 600;
+}
+
+.questao-ajuda {
+    font-size: .9rem;
+    line-height: 1.5;
+    color: #625347;
+    margin: 6px 0 12px;
+}
+
+.questao-resposta {
+    display: flex;
+    gap: 12px;
+}
+
+.questao-resposta input {
+    min-width: 0;
+    flex: 1;
+    border: 1px solid #a58c78;
+    border-radius: 8px;
+    padding: 12px 14px;
+    background: #fff;
+    color: #3a2a1e;
+    font: inherit;
+}
+
+.questao-resposta button {
+    border: 0;
+    border-radius: 8px;
+    background: #aa3912;
+    color: white;
+    font: inherit;
+    font-weight: 700;
+    padding: 12px 22px;
+    cursor: pointer;
+}
+
+.questao-resposta button:hover {
+    background: #832b0e;
+}
+
+/* Estado de falha: a resposta foi validada, mas a API não respondeu */
+.questao-resposta button[disabled] {
+    background: #b0a49c;
+    cursor: progress;
+}
+
+.questao-resposta button[disabled]:hover {
+    background: #b0a49c;
+}
+
+.questao-card[data-estado="falha"] {
+    border-color: #a8730d;
+}
+
+.questao-card[data-estado="falha"] .questao-feedback {
+    color: #8a5a08;
+}
+
+.questao-feedback {
+    min-height: 24px;
+    margin-top: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.questao-card[data-estado="acerto"] {
+    border-color: #267044;
+}
+
+.questao-card[data-estado="acerto"] .questao-feedback {
+    color: #226139;
+}
+
+.questao-card[data-estado="erro"] .questao-feedback {
+    color: #a12b1b;
+}
+
+.questao-resposta input[aria-invalid="true"] {
+    border-color: #a12b1b;
+}
+
+.atividades-container :focus-visible, .pular-conteudo:focus-visible {
+    outline: 3px solid #773e20;
+    outline-offset: 4px;
+}
+
+.pular-conteudo {
+    position: absolute;
+    left: 16px;
+    top: -80px;
+    background: white;
+    padding: 12px;
+    z-index: 10;
+}
+
+.pular-conteudo:focus {
+    top: 12px;
+}
+
+.atividade-voltar {
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .atividades-container {
+        padding: 28px 16px 40px;
+    }
+
+    .questao-card {
+        padding: 20px 16px;
+    }
+
+    .questao-resposta {
+        flex-direction: column;
+    }
+
+    .questao-resposta button {
+        min-height: 46px;
+    }
+
+    .cabecalho {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+}
