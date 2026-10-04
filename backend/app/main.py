@@ -6,8 +6,7 @@ from app.database import engine, Base
 import app.models.usuarios
 import app.models.questoes
 import app.models.usuarios_questoes
-from app.routers import auth
-from app.routers import usuario
+from app.routers import auth, usuario
 
 # Routers serão implementados conforme forem adicionados
 
@@ -32,6 +31,7 @@ app.add_middleware(
 # todo
 # Inclui os routers quando existirem
 app.include_router(auth.router, prefix="/auth", tags=["auth"])
+app.include_router(usuario.router, prefix="/usuario", tags=["usuario"])
 # app.include_router(form.router, prefix="/form", tags=["form"])
 
 @app.get("/health", tags=["health"])
