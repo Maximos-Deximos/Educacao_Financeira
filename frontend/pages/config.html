@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Configurações | InvestiMentes</title>
+
+    <link rel="icon" href="../assets/icons/logo_invest.ico">
+
+    <!-- CSS GERAL DO PROJETO -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/variables.css">
+
+    <!-- HEADER E FOOTER OFICIAIS -->
+    <link rel="stylesheet" href="../css/layout/header.css">
+    <link rel="stylesheet" href="../css/layout/footer.css">
+
+    <!-- CSS ESPECÍFICO DA CONFIGURAÇÃO -->
+    <link rel="stylesheet" href="../css/config.css">
+  <script>
+  (function () {
+    function redirecionarLogin() {
+      try {
+        localStorage.removeItem("investimentes_token");
+      } catch (e) {}
+      window.location.replace("login.html");
+    }
+
+    try {
+      const token = localStorage.getItem("investimentes_token");
+      if (!token) {
+        redirecionarLogin();
+        return;
+      }
+
+      const partes = token.split(".");
+      if (partes.length !== 3) {
+        redirecionarLogin();
+        return;
+      }
+
+      const payloadBase64 = partes[1]
+        .replace(/-/g, "+")
+        .replace(/_/g, "/");
+
+      const payload = JSON.parse(atob(payloadBase64));
+      if (!payload.exp || payload.exp * 1000 <= Date.now()) {
+        redirecionarLogin();
+        return;
+      }
+    } catch (erro) {
+      redirecionarLogin();
+    }
+  })();
+</script>
+<script src="../js/components/theme.js"></script>
+  <script src="../js/components/theme-toggle.js"></script>
+</head>
+
+<body class="config-page">
+
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho">
+
+        <a
+            class="cabecalho-brand"
+            href="home.html"
+            aria-label="InvestiMentes — portal inicial"
+        >
+            InvestiMentes
+        </a>
+
+        <div class="cabecalho-acoes">
+
+            <a
+                href="home.html"
+                class="config-sair"
+            >
+                Voltar
+            </a>
+
+        </div>
+
+    </header>
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main
+        id="conteudo"
+        class="config-main"
+        tabindex="-1"
+    >
+
+        <section
+            class="config-card"
+            aria-labelledby="config-title"
+        >
+
+            <!-- TÍTULO -->
+
+            <div class="config-cabecalho">
+
+                <h1 id="config-title">
+                    Configurações
+                </h1>
+
+                <p class="config-saudacao">
+                    Olá,
+                    <span id="nome-saudacao">usuário</span>!
+                </p>
+
+            </div>
+
+
+            <!-- ALTERAR NOME -->
+
+            <section class="config-secao">
+
+                <h2>
+                    Nome de usuário
+                </h2>
+
+                <p class="config-descricao">
+                    Altere o nome que será exibido na sua conta.
+                </p>
+
+                <form
+                    id="form-nome"
+                    class="config-form"
+                >
+
+                    <div class="campo">
+
+                        <label for="nome-usuario">
+                            Nome de usuário
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome-usuario"
+                            name="nome"
+                            placeholder="Digite seu nome"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="config-botao"
+                    >
+                        Alterar nome
+                    </button>
+
+                    <p
+                        id="nome-feedback"
+                        class="feedback"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </section>
+
+
+            <!-- ALTERAR SENHA -->
+
+            <section class="config-secao">
+
+                <h2>
+                    Alterar senha
+                </h2>
+
+                <p class="config-descricao">
+                    Atualize a senha da sua conta.
+                </p>
+
+                <form
+                    id="form-senha"
+                    class="config-form"
+                >
+
+                    <div class="campo">
+
+                        <label for="senha-atual">
+                            Senha atual
+                        </label>
+
+                        <div class="campo-senha">
+
+                            <input
+                                type="password"
+                                id="senha-atual"
+                                name="senha-atual"
+                                autocomplete="current-password"
+                                maxlength="15"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="botao-visualizar-senha"
+                                data-target="senha-atual"
+                                aria-label="Mostrar senha"
+                                aria-pressed="false"
+                            >
+                                👁
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="nova-senha">
+                            Nova senha
+                        </label>
+
+                        <div class="campo-senha">
+
+                            <input
+                                type="password"
+                                id="nova-senha"
+                                name="nova-senha"
+                                autocomplete="new-password"
+                                maxlength="15"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="botao-visualizar-senha"
+                                data-target="nova-senha"
+                                aria-label="Mostrar senha"
+                                aria-pressed="false"
+                            >
+                                👁
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="confirmar-senha">
+                            Confirmar nova senha
+                        </label>
+
+                        <div class="campo-senha">
+
+                            <input
+                                type="password"
+                                id="confirmar-senha"
+                                name="confirmar-senha"
+                                autocomplete="new-password"
+                                maxlength="15"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="botao-visualizar-senha"
+                                data-target="confirmar-senha"
+                                aria-label="Mostrar senha"
+                                aria-pressed="false"
+                            >
+                                👁
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="config-botao"
+                    >
+                        Alterar senha
+                    </button>
+
+                    <p
+                        id="senha-feedback"
+                        class="feedback"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </section>
+
+
+            <!-- TEMA -->
+
+            <section class="config-secao">
+
+                <h2>
+                    Tema
+                </h2>
+
+                <p class="config-descricao">
+                    Escolha a aparência da página.
+                </p>
+
+                <div
+                    class="tema-opcoes"
+                    aria-label="Opções de tema"
+                >
+
+                    <button
+                        type="button"
+                        id="tema-claro"
+                        class="tema-botao"
+                    >
+                        Tema claro
+                    </button>
+
+                    <button
+                        type="button"
+                        id="tema-escuro"
+                        class="tema-botao"
+                    >
+                        Tema escuro
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ OFICIAL DO PROJETO -->
+
+    <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="../js/config/config.js?v=20251005d"></script>
+    <script src="../js/services/api.js?v=20251005d"></script>
+    <script src="../js/services/auth.js?v=20251005d"></script>
+    <script src="../js/services/usuario.js?v=20251005d"></script>
+    <script src="../js/components/footer.js?v=20251005d"></script>
+    <script src="../js/pages/config.js?v=20251005d"></script>
+</body>
+</html>

@@ -34,6 +34,7 @@ app.add_middleware(
 # Inclui os routers quando existirem
 app.include_router(auth.router, prefix="/auth", tags=["auth"])
 app.include_router(form.router, prefix="/form", tags=["form"])
+app.include_router(usuario.router, prefix="/usuario", tags=["usuario"])
 
 @app.get("/health", tags=["health"])
 def health_check():
